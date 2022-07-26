@@ -1,16 +1,13 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ContentProvider } from './data/Content'
-import BookData from './data/BookData'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Catalogo from './components/Catalogo'
-import Autores from './components/Autores'
-import Contacto from './components/Contacto'
+import Catalogo from './pages/Catalogo'
+import Libro from './pages/Libro'
+import Autores from './pages/Autores'
+import Contacto from './pages/Contacto'
 
 function App() {
-  const [books] = useState(BookData)
-
   return (
     <ContentProvider>
       <Router>
@@ -18,7 +15,8 @@ function App() {
           <div className='container'>
             <Header />
             <Routes>
-              <Route exact path='/' element={<Catalogo books={books} />} />
+              <Route exact path='/' element={<Catalogo />} />
+              <Route path='/:url' element={<Libro />} />
               <Route path='/autores' element={<Autores />} />
               <Route path='/contacto' element={<Contacto />} />
             </Routes>

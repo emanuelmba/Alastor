@@ -1,9 +1,9 @@
 import { useContext, useEffect } from 'react'
 import Content from '../data/Content'
-import CatalogoItem from './CatalogoItem'
+import CatalogueItem from '../components/CatalogueItem'
 
-function Catalogo({ books }) {
-  const { setBanner } = useContext(Content)
+function Catalogo() {
+  const { setBanner, books } = useContext(Content)
 
   useEffect(() => {
     setBanner('url(../imgs/alastor-cat.jpg)')
@@ -12,7 +12,7 @@ function Catalogo({ books }) {
   return (
     <main>
       {books.map((item) => (
-        <CatalogoItem key={item.id} item={item} />
+        <CatalogueItem key={item.id} item={item} />
       ))}
       <div className='filler'></div>
       <div className='filler'></div>

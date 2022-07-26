@@ -103,7 +103,7 @@ a > img, .nav-btn {
   border: 0;
 }
 
-.logo, .nav-btn, .book {
+.logo, .nav-btn {
   cursor: pointer;
 }
 .fade, .unfade:hover {
@@ -138,6 +138,7 @@ a > img, .nav-btn {
   }
   header {
     position: fixed;
+    z-index: 1;
   }
 }
 

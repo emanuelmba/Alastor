@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../imgs/logo.png'
 import Content from '../data/Content'
 
 function Header() {
@@ -14,7 +13,7 @@ function Header() {
     <header style={headerImg}>
       <div>
         <Link to='/'>
-          <img className='logo fade' src={Logo} alt='Editorial Alastor' />
+          <img className='logo fade' src={'../imgs/logo.png'} alt='Editorial Alastor' />
         </Link>
       </div>
       <nav>

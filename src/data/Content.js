@@ -5,25 +5,20 @@ const Content = createContext()
 
 export const ContentProvider = ({ children }) => {
   const [banner, setBanner] = useState('')
+  const [book, setBook] = useState('')
   const [books] = useState(BookData)
   const mail = 'info@editorial-alastor.com.ar'
-  const trad = 'E. Ehrendost'
   const prices = [500, 700]
-
-  const [eaBook, getBook] = useState({
-    item: {},
-  })
 
   return (
     <Content.Provider
       value={{
         setBanner,
-        getBook,
+        setBook,
         banner,
+        book,
         books,
-        eaBook,
         mail,
-        trad,
         prices,
       }}
     >

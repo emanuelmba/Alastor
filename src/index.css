@@ -59,15 +59,48 @@ nav {
   font-size: 1.5rem;
 }
 
-main {
+main, .content {
   padding: 0.75rem 1.75rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+main {
+  flex-wrap: wrap;
 }
 
 main > div {
   margin: 0.75rem;
+}
+
+.content {
+  display: inline-flex;
+}
+
+.content > div {
+  margin: 0.75rem 0;
+}
+
+.cover {
+ margin: 0 3.75rem 0 1.75rem;
+}
+
+.info > div {
+  margin-bottom: 1.5rem;;
+  font-size: .75rem;
+}
+
+.info > div:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: .8rem;
+  font-weight: lighter;
 }
 
 .card img, .filler {
@@ -81,15 +114,28 @@ main > div {
   margin: 0 0.75rem;
 }
 
-footer {
-  font-family: Tahoma, Verdana, sans-serif;
+.index {
+	background-color: #fff0ed;
+	margin: .75rem 0 0;
+	border-radius:.75rem;
+	padding: .75rem;
+	color: #000;
+}
+
+.entry {
+	margin: 0 1em;
+	font-style: italic;
+}
+
+footer p {
+  font-family: Tahoma, sans-serif;
   font-weight: bold;
   font-size: 0.55rem;
   color: #686868;
   padding: 0.25rem 0.5rem;
 }
 
-a:link, a:visited, a:active, .nav-btn {
+a:link, a:visited, a:active, .nav-btn, .shade {
   text-decoration: none; 
   color: #8f8f8f;
 }
@@ -129,10 +175,10 @@ a > img, .nav-btn {
 }
 
 @media screen and (max-width: 582px) {
-  header, nav, main {
+  header, nav, main, .content {
     text-align: center;
   }
-  main {
+  main, .content {
     flex-direction: column;
     padding-top: 190px;
   }
@@ -140,16 +186,30 @@ a > img, .nav-btn {
     position: fixed;
     z-index: 1;
   }
+  .logo {
+    margin-left: 1.15rem;
+  }
+  .cover {
+    margin: 0;
+  }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 372px) {
+  header {
+    height: 124px;
+  }
   .logo {
-    width: 18rem;
+    width: 80%;
   }
   nav {
     padding: 0.25rem 0.25rem 0.1rem;
   }
   .nav-btn {
-    margin: 0 0.2rem;
+    width: 29%;
+    margin: 0 0.3rem;
+    font-size: 1.3rem;
+  }
+  main, .content {
+    padding-top: 136px;
   }
 }

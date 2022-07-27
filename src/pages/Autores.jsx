@@ -8,7 +8,7 @@ function Autores() {
     setBanner('url(../imgs/alastor-aut.jpg)')
   }, [])
 
-  return <div>Autores</div>
+  return <main>Autores</main>
 }
 
 export default Autores

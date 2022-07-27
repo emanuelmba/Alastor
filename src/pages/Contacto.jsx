@@ -8,7 +8,7 @@ function Contacto() {
     setBanner('url(../imgs/alastor-con.jpg)')
   }, [])
 
-  return <div>Contacto</div>
+  return <main>Contacto</main>
 }
 
 export default Contacto

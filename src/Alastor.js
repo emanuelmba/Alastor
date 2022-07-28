@@ -18,7 +18,9 @@ function App() {
             <Header />
             <Routes>
               <Route exact path='/' element={<Catalogo />} />
-              <Route path='/:url' element={<Libro />} />
+              <Route path='/*' element={<Catalogo />} />
+              <Route path='/catalogo' element={<Catalogo />} />
+              <Route path='/catalogo/:url' element={<Libro />} />
               <Route path='/autores' element={<Autores />} />
               <Route path='/contacto' element={<Contacto />} />
             </Routes>

@@ -5,10 +5,14 @@ const Content = createContext()
 
 export const ContentProvider = ({ children }) => {
   const [banner, setBanner] = useState('')
-  const [book, setBook] = useState('')
   const [books] = useState(BookData)
   const mail = 'info@editorial-alastor.com.ar'
   const prices = [500, 700]
+  const mpago = 'https://mpago.la/1MjwDsg'
+
+  const [book, setBook] = useState({
+    item: {},
+  })
 
   return (
     <Content.Provider
@@ -20,6 +24,7 @@ export const ContentProvider = ({ children }) => {
         books,
         mail,
         prices,
+        mpago,
       }}
     >
       {children}

@@ -1,4 +1,5 @@
 import { useContext, useEffect } from 'react'
+import { FaAmazon, FaBloggerB, FaRegHandshake } from 'react-icons/fa'
 import Content from '../data/Content'
 
 function Contacto() {
@@ -8,7 +9,16 @@ function Contacto() {
     setBanner('url(../imgs/alastor-con.jpg)')
   }, [])
 
-  return <main>Contacto</main>
+  return (
+    <main>
+      <div>Contacto</div>
+      <div>
+        <FaAmazon />
+        <FaBloggerB />
+        <FaRegHandshake />
+      </div>
+    </main>
+  )
 }
 
 export default Contacto

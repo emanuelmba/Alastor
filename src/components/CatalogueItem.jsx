@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import Content from '../data/Content'
 import Card from './Card'
 
 function CatalogueItem({ item }) {
-  const code = item.id <= 9 ? '0' + item.id : item.id
+  const { setBook } = useContext(Content)
 
   return (
     <Card>
-      <Link to={`/${item.url}`}>
+      <Link onClick={() => setBook(item)} to={`/catalogo/${item.url}`}>
         <img
           className='book'
-          src={`../imgs/ea${code}.jpg`}
+          src={`../imgs/ea${item.code}.jpg`}
           alt={item.author + ' - ' + item.title}
           title={item.author + ' - ' + item.title}
         />

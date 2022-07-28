@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
   background-attachment: fixed;
   background-color: black;
   color: white;
-  font-family: Arial, sans-serif;
   font-size: 0.8rem;
   min-height: 100vh;
 }
@@ -74,16 +74,35 @@ main > div {
 }
 
 .content {
-  display: inline-flex;
+  display: grid;
 }
 
 .content > div {
-  margin: 0.75rem 0;
+  margin: 0.75rem;
+}
+
+.card {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .cover {
- margin: 0 3.75rem 0 1.75rem;
+ margin: 0 2.25rem 0 0;
 }
+
+.pdf {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.pdf > .btn {
+  border: 0.01rem solid #8f8f8f;
+  padding: .75rem 2rem;
+}
+
+.info {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;}
 
 .info > div {
   margin-bottom: 1.5rem;;
@@ -92,6 +111,30 @@ main > div {
 
 .info > div:last-child {
   margin-bottom: 0;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.buy {
+  border: 0.01rem solid #8f8f8f;
+  padding: .75rem 0;
+}
+
+.buy, .btn {
+  border-radius: .75rem;
+}
+
+.btn {
+  padding: .75rem;
+}
+
+.buy > .btn:nth-child(2) {
+  border-left:  .001rem solid #8f8f8f;
+  border-radius: 0 .75rem .75rem 0;
 }
 
 h1 {
@@ -116,7 +159,7 @@ h2 {
 
 .index {
 	background-color: #fff0ed;
-	margin: .75rem 0 0;
+	margin: .75rem 0 -1rem;
 	border-radius:.75rem;
 	padding: .75rem;
 	color: #000;
@@ -162,6 +205,16 @@ a > img, .nav-btn {
   filter: grayscale(100%);
 }
 
+@media screen and (max-width: 844px) {
+  .specs {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .buy {
+    margin-top: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 758px) {
   main {
     justify-content: space-evenly;
@@ -175,13 +228,6 @@ a > img, .nav-btn {
 }
 
 @media screen and (max-width: 582px) {
-  header, nav, main, .content {
-    text-align: center;
-  }
-  main, .content {
-    flex-direction: column;
-    padding-top: 190px;
-  }
   header {
     position: fixed;
     z-index: 1;
@@ -189,8 +235,27 @@ a > img, .nav-btn {
   .logo {
     margin-left: 1.15rem;
   }
+  header, nav, main, .content {
+    text-align: center;
+  }
+  main, .content {
+    flex-direction: column;
+    padding-top: 190px;
+  }
   .cover {
     margin: 0;
+  }
+  .info {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .pdf {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    padding: .75rem 0;
+  }
+  .specs {
+    align-items: center;
   }
 }
 

@@ -17,7 +17,7 @@ function Header() {
         </Link>
       </div>
       <nav>
-        <Link to='/'>
+        <Link to='/catalogo'>
           <button className='nav-btn'>Catálogo</button>
         </Link>
         <Link to='/autores'>

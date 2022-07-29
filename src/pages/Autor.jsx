@@ -8,7 +8,14 @@ function Autor() {
 
   useEffect(() => {
     if (author.id === undefined) {
-      setAuthor(authors.find((x) => x.url === window.location.pathname.substring(9)))
+      const validReq = authors.find(
+        (x) => x.url === window.location.pathname.substring(9)
+      )
+      if (validReq !== undefined) {
+        setAuthor(validReq)
+      } else {
+        window.location = '/'
+      }
     }
     setBanner('url(../imgs/alastor-aut.jpg)')
   }, [])

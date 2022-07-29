@@ -8,7 +8,14 @@ function Libro() {
 
   useEffect(() => {
     if (book.id === undefined) {
-      setBook(books.find((x) => x.url === window.location.pathname.substring(10)))
+      const validReq = books.find(
+        (x) => x.url === window.location.pathname.substring(10)
+      )
+      if (validReq !== undefined) {
+        setBook(validReq)
+      } else {
+        window.location = '/'
+      }
     }
   }, [])
 

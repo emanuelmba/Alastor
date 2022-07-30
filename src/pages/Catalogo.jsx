@@ -9,8 +9,10 @@ function Catalogo() {
     setBanner('url(../imgs/alastor-cat.jpg)')
   }, [])
 
+  document.title = 'Editorial Alastor'
+
   return (
-    <main>
+    <main className='cat'>
       {books.map((item) => (
         <CatalogueItem key={item.id} item={item} />
       ))}

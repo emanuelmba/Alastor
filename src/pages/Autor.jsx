@@ -4,7 +4,7 @@ import Card from '../components/Card'
 import RelatedItem from '../components/RelatedItem'
 
 function Autor() {
-  const { author, setAuthor, authors, books, setBanner } = useContext(Content)
+  const { author, setAuthor, authors, books, setBanner, fullName } = useContext(Content)
 
   useEffect(() => {
     if (author.id === undefined) {
@@ -23,16 +23,17 @@ function Autor() {
   if (author.id === undefined) {
     return <div>Loading...</div>
   } else {
+    document.title = `Editorial Alastor | ${fullName(author)}`
     const related = books.filter((item) => author.rels.includes(item.id))
 
     return (
-      <div className='content'>
+      <main className='content'>
         <Card>
           <img
             className='cover'
-            src={`../imgs/pics-${author.url}.jpg`}
-            alt={author.name + ' ' + author.surname}
-            title={author.name + ' ' + author.surname}
+            src={`../imgs/pic-${author.url}.jpg`}
+            alt={fullName(author)}
+            title={fullName(author)}
           />
         </Card>
 
@@ -42,24 +43,22 @@ function Autor() {
 
         <div className='info'>
           <div>
-            <h1>{author.name + ' ' + author.surname}</h1>
+            <h1>{fullName(author)}</h1>
             <span className='shade'>{author.life}</span>
           </div>
-          <div dangerouslySetInnerHTML={{ __html: author.bio }}></div>
+          <div dangerouslySetInnerHTML={{ __html: author.bio }} />
           <div>
             <strong>
               <em>Traducciones disponibles online:</em>
             </strong>
             {author.trads.map((trad, index) => (
               <p key={index}>
-                ·&nbsp;
+                <strong>·&nbsp;</strong>
                 <a href={author.links[index]} target='_blank' rel='noreferrer'>
                   {trad}
                 </a>
               </p>
             ))}
-            <br />
-            <br />
           </div>
         </div>
 
@@ -73,7 +72,7 @@ function Autor() {
             ))}
           </div>
         </div>
-      </div>
+      </main>
     )
   }
 }

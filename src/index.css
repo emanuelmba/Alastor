@@ -59,26 +59,36 @@ nav {
   font-size: 1.5rem;
 }
 
-main, .content {
+main {
   padding: 0.75rem 1.75rem;
   display: flex;
   justify-content: space-between;
-}
-
-main {
-  flex-wrap: wrap;
 }
 
 main > div {
   margin: 0.75rem;
 }
 
+.cat {
+  flex-wrap: wrap;
+}
+
 .content {
   display: grid;
 }
 
-.content > div {
-  margin: 0.75rem;
+.aut {
+  justify-content: space-around;
+  padding: 0.75rem 0 0.75rem 0.5rem;
+}
+
+.aut > div {
+  margin: 0;
+}
+
+.aut img {
+  width: 13rem;
+  height: auto;
 }
 
 .card {
@@ -214,6 +224,10 @@ a:link, a:visited, a:active, .nav-btn, .shade {
 a:hover, .nav-btn:hover {
   color: white;
 }
+.aut img:hover {
+  filter: drop-shadow(0.01rem 0.01rem 0.03rem #fff0ed) 
+          drop-shadow(-0.01rem -0.01rem 0.03rem #fff0ed);
+}
 a:focus {
   outline: 0;
 }
@@ -267,9 +281,11 @@ a > img, .nav-btn {
   header, nav, main, .content {
     text-align: center;
   }
-  main, .content {
-    flex-direction: column;
+  main, .content, .aut {
     padding-top: 190px;
+  }
+  .content {
+    flex-direction: column;
   }
   .cover {
     margin: 0;
@@ -309,7 +325,7 @@ a > img, .nav-btn {
     margin: 0 0.3rem;
     font-size: 1.3rem;
   }
-  main, .content {
+  main, .content, .aut {
     padding-top: 136px;
   }
   .pdf > .btn {

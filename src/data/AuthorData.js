@@ -165,7 +165,7 @@ const AuthorData = [
     name: 'H. P.',
     surname: 'Lovecraft',
     url: 'h-p-lovecraft',
-    life: '(Providence, RI, EEUU, 1980 - Providence, RI, EEUU, 1937)',
+    life: '(Providence, RI, EEUU, 1890 - Providence, RI, EEUU, 1937)',
     bio: 'Pagano, de hábitos nocturnos, políticamente incorrecto, retraído salvo por carta, su obra se destaca eminentemente como una de las más lóbregas, imaginativas y subyugantes de toda la literatura de horror y se mantiene siempre vigente, ganando adeptos año tras año, cual un magnífico panteón irguiéndose imperturbable en la ciega noche de un cementerio de sepulcros en general modestos, derruidos u olvidados. En el conjunto de sus concepciones, de tal vez dudoso valor estilístico pero de inapreciable poder evocador, se conjuga desde lo profundamente demoníaco y sideral de sus Mitos de Cthulhu hasta la magia de sus brillantes vuelos dunsanianos, pero pasando sobre todo por lo notablemente opresivo, personal y oscuro de sus cuentos góticos o de Arkham.',
     trads: ['El extraño', 'Los otros dioses', 'El sabueso'],
     links: [
@@ -189,6 +189,18 @@ const AuthorData = [
     ],
     rels: [2],
   },
+  /*{
+    id: 14 - 23,
+    name: '',
+    surname: '',
+    url: '',
+    life: '()',
+    bio: '',
+    trads: [],
+    links: [],
+    rels: [4],
+  },
+  rehacer thumbs, cambiar foto a otros y sumar 10: burger goethe coleridge leopardi chateau lamartine musset leconte baudelaire rollinat */
 ]
 
 export default AuthorData

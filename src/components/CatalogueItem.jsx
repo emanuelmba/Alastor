@@ -4,7 +4,7 @@ import Content from '../data/Content'
 import Card from './Card'
 
 function CatalogueItem({ item }) {
-  const { setBook } = useContext(Content)
+  const { setBook, fullTitle } = useContext(Content)
 
   return (
     <Card>
@@ -12,8 +12,8 @@ function CatalogueItem({ item }) {
         <img
           className='book'
           src={`../imgs/ea${item.code}.jpg`}
-          alt={item.author + ' - ' + item.title}
-          title={item.author + ' - ' + item.title}
+          alt={`${fullTitle(item)}`}
+          title={`${fullTitle(item)}`}
         />
       </Link>
     </Card>

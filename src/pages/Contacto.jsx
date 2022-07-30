@@ -9,6 +9,8 @@ function Contacto() {
     setBanner('url(../imgs/alastor-con.jpg)')
   }, [])
 
+  document.title = 'Editorial Alastor | Contacto'
+
   return (
     <main>
       <div>Contacto</div>

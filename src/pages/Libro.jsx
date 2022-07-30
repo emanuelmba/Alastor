@@ -4,7 +4,8 @@ import Content from '../data/Content'
 import Card from '../components/Card'
 
 function Libro() {
-  const { book, setBook, books, setBanner, prices, mpago } = useContext(Content)
+  const { book, setBook, books, setBanner, prices, mpago, fullTitle } =
+    useContext(Content)
 
   useEffect(() => {
     if (book.id === undefined) {
@@ -26,14 +27,16 @@ function Libro() {
   if (book.id === undefined) {
     return <div>Loading...</div>
   } else {
+    document.title = `Editorial Alastor | ${fullTitle(book)}`
+
     return (
-      <div className='content'>
+      <main className='content'>
         <Card>
           <img
             className='cover'
             src={`../imgs/ea${book.code}.jpg`}
-            alt={book.author + ' - ' + book.title}
-            title={book.author + ' - ' + book.title}
+            alt={fullTitle(book)}
+            title={fullTitle(book)}
           />
         </Card>
 
@@ -68,7 +71,9 @@ function Libro() {
               <span className='shade'>{book.isbn}</span>
               <br />
               <strong>Formato</strong> &nbsp;
-              <span className='shade'>{book.pags > 0 && book.pags + 'p. | '}ebook</span>
+              <span className='shade'>
+                {book.pags > 0 && book.pags + ' p. | '}ebook
+              </span>
               <br />
               <strong>Precio</strong> &nbsp;
               <span className='shade'>
@@ -87,17 +92,14 @@ function Libro() {
             </div>
           </div>
 
-          <div dangerouslySetInnerHTML={{ __html: book.desc }}></div>
+          <div dangerouslySetInnerHTML={{ __html: book.desc }} />
 
           <div>
             <strong>Contenidos</strong>
-            <div
-              className='index'
-              dangerouslySetInnerHTML={{ __html: book.index }}
-            ></div>
+            <div className='index' dangerouslySetInnerHTML={{ __html: book.index }} />
           </div>
         </div>
-      </div>
+      </main>
     )
   }
 }

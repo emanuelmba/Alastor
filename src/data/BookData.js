@@ -61,7 +61,7 @@ const BookData = [
     index:
       '<strong>Manfred</strong><p class="entry">Acto I<br/>Acto II<br/>Acto III<br/><br/></p><strong>Caín</strong><p class="entry">Acto I<br/>Acto II<br/>Acto III',
   },
-  {
+  /*{
     id: 5,
     code: '05',
     author: 'E. Ehrendost',
@@ -75,7 +75,7 @@ const BookData = [
     desc: '<em>Mitos y leyendas de la gran urbe</em> es un compendio de narraciones urbanas que, abarcando desde ajadas leyendas paganas hasta espeluznantes relatos de horror, encuentran su marco en las sórdidas y recónditas callejas de las metrópolis contemporáneas. No se propone este libro recoger mitos y leyendas ya populares, sino antes bien dotar a los gigantes de cemento tanto de una mitología propia como de presencias y sucesos extraños que les confieran cierta aura capaz de revelarlos, a nuestros ojos, un poco más bellos y misteriosos. Se dan así cita en estas páginas, impregandas tanto de poesía como de oscuridad, desde dioses, trasgos y seres mitológicos que habitan ignorados en los más ocultos reductos de las grandes urbes, hasta historias, leyendas y consejas tan maravillosas como llenas de espanto y horror.',
     index:
       '<strong>Libro I</strong><p class="entry">El semáforo en perpetuo rojo<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/><br/></p><strong>Libro II</strong><p class="entry">cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/><br/></p><strong>Libro III</strong><p class="entry">cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento<br/>cuento',
-  },
+  },*/
 ]
 
 export default BookData

@@ -65,7 +65,7 @@ main {
   justify-content: space-between;
 }
 
-main > div {
+main > div, .social > a {
   margin: .75rem;
 }
 
@@ -87,7 +87,7 @@ main > div {
   height: auto;
 }
 
-.con, .btn {
+.con, .btn, .index {
   padding: .75rem;
 }
 
@@ -176,7 +176,6 @@ h2 {
 	background-color: #fff0ed;
 	margin: .75rem 0 -1rem;
 	border-radius:.75rem;
-	padding: .75rem;
 	color: #000;
 }
 
@@ -214,6 +213,15 @@ h2 {
   width: 13rem;
   margin: auto;
 }
+.msg-warning {
+  color: yellowgreen;
+}
+.msg-spam {
+  color: firebrick
+}
+.msg-ok {
+  color: lightseagreen
+}
 
 form {
   border: .1rem solid #121921;
@@ -244,13 +252,16 @@ select {
   width: 14.45rem;
 }
 
+textarea {
+  font-size: .85rem;
+}
+
 .social img {
   width: 5rem;
   margin: 0;
 }
 
 .social > a {
-  margin: .75rem;
   font-size: 1.5rem;
 }
 

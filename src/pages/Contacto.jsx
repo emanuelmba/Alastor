@@ -1,4 +1,5 @@
 import { useState, useContext, useEffect } from 'react'
+import { send } from 'emailjs-com'
 import { FaAmazon, FaBloggerB, FaRegHandshake } from 'react-icons/fa'
 import Content from '../data/Content'
 
@@ -7,12 +8,17 @@ function Contacto() {
   const [msg, setMsg] = useState(
     'Envíe su consulta o pedido mediante el siguiente formulario:'
   )
-  const [form, setForm] = useState({})
+  const [color, setColor] = useState('')
+  const [form, setForm] = useState({
+    nombre: '',
+    email: '',
+    lugar: '',
+    motivo: '',
+    mensaje: '',
+  })
 
   const handleChange = (e) => {
-    const name = e.target.name
-    const value = e.target.value
-    setForm((values) => ({ ...values, [name]: value }))
+    setForm({ ...form, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = (e) => {
@@ -28,16 +34,25 @@ function Contacto() {
       form.email.length < 6
     ) {
       setMsg('Por favor, proporcione un email válido y complete todos los campos.')
+      setColor('warning')
     } else if (
       form.mensaje.includes(' SEO') ||
+      form.mensaje.includes('traffic') ||
       form.mensaje.includes('website') ||
       form.mensaje.includes('.ru')
     ) {
       setMsg('Su spam no es nada bienvenido. ¡Fuera de aquí!')
+      setColor('spam')
       setForm('')
     } else {
-      console.log(form)
+      send('service_nskvtlv', 'template_4hc4b1f', form, 'ccZ5vFm4cIv3YUA58')
+        .then((response) => {})
+        .catch((err) => {
+          setMsg('Se ha producido un error. Vuelva a intentarlo más tarde.')
+          setColor('spam')
+        })
       setMsg('Su mensaje ha sido enviado. Recibirá respuesta a la brevedad.')
+      setColor('ok')
       setForm('')
     }
   }
@@ -51,7 +66,7 @@ function Contacto() {
   return (
     <main className='con'>
       <div>
-        <div className='msg'>{msg}</div>
+        <div className={'msg msg-' + color}>{msg}</div>
 
         <form onSubmit={handleSubmit}>
           <div>

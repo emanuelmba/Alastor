@@ -196,11 +196,13 @@ const AuthorData = [
     url: '',
     life: '()',
     bio: '',
-    trads: [],
-    links: [],
+    trads: [''],
+    links: [''],
     rels: [4],
-  },
-  rehacer thumbs, cambiar foto a otros y sumar 10: burger goethe coleridge leopardi chateau lamartine musset leconte baudelaire rollinat */
+  },*/
+  /*sumar 10 primeros: burger goethe coleridge leopardi chateau lamartine musset leconte baudelaire rollinat;
+  faltan: tieck brentano chamisso eichendorff muller heine morike wesendonck, blake wordsworth southey moore tennyson swinburne, vigny borel gautier mallarme;
+  luego: hoffmann irving hawthorne gogol gautier lautreamont huysmans wilde ¿cadalso becquer aikin raupach tolstoi? */
 ]
 
 export default AuthorData

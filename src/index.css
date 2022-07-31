@@ -230,22 +230,22 @@ form {
   margin: 1rem;
 }
 
-form > div {
-  text-align: center;
-}
-
-label {
+form > div > label {
   text-align: right;
   width: 3.5rem;
   font-weight: bold;
   display: inline-block;
 }
 
+labe l {
+  line-height: 1rem;
+}
+
 input, textarea, select {
   width: 14rem;
-  margin: .1rem .5rem;
+  margin: .3rem .5rem;
   border-radius: 0;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 select {
@@ -283,8 +283,7 @@ a:hover, .nav-btn:hover {
   color: white;
 }
 .aut img:hover {
-  filter: drop-shadow(.01rem .01rem .03rem #fff0ed) 
-          drop-shadow(-.01rem -.01rem .03rem #fff0ed);
+  filter: drop-shadow(.003rem .003rem .1rem #fff0ed);
 }
 a:focus {
   outline: 0;

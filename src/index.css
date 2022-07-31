@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
   background-color: black;
   color: white;
-  font-size: 0.8rem;
+  font-size: .8rem;
   min-height: 100vh;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .container {
   background-color: #000312;
-  box-shadow: 0 0.2rem 1.5rem black;
+  box-shadow: 0 .2rem 1.5rem black;
 }
 
 header {
@@ -43,43 +43,39 @@ header {
 .logo {
   width: 19.5rem;
   height: auto;
-  margin: 0.4rem 1rem;
+  margin: .4rem 1rem;
 }
 
 nav {
-  padding: 0.25rem 1rem 0.1rem;
+  padding: .25rem 1rem .1rem;
   text-align: right;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .nav-btn {
-  margin: 0 0.75rem;
+  margin: 0 .75rem;
   background-color: rgba(0, 0, 0, 0);
   font-family: 'UnifrakturMaguntia', serif;
   font-size: 1.5rem;
 }
 
 main {
-  padding: 0.75rem 1.75rem;
+  padding: .75rem 1.75rem;
   display: flex;
   justify-content: space-between;
 }
 
 main > div {
-  margin: 0.75rem;
+  margin: .75rem;
 }
 
 .cat {
   flex-wrap: wrap;
 }
 
-.content {
-  display: grid;
-}
-
-.aut {
+.aut, .con {
   justify-content: space-around;
-  padding: 0.75rem 0 0.75rem 0.5rem;
+  padding: .75rem 0 .75rem .5rem;
 }
 
 .aut > div {
@@ -91,6 +87,18 @@ main > div {
   height: auto;
 }
 
+.con, .btn {
+  padding: .75rem;
+}
+
+.con, .cardrel {
+  text-align: center;
+}
+
+.content {
+  display: grid;
+}
+
 .card {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
@@ -100,17 +108,13 @@ main > div {
  margin: 0 2.25rem 0 0;
 }
 
-.btn {
-  padding: .75rem;
-}
-
 .pdf {
   grid-column: 1 / span 1;
   grid-row: 2 / span 2;
 }
 
 .pdf > .btn {
-  border: 0.01rem solid #8f8f8f;
+  border: .01rem solid #8f8f8f;
   padding: .75rem 2rem;
 }
 
@@ -135,7 +139,7 @@ main > div {
 }
 
 .buy {
-  border: 0.01rem solid #8f8f8f;
+  border: .01rem solid #8f8f8f;
   padding: .75rem 0;
 }
 
@@ -160,12 +164,12 @@ h2 {
 .card img, .filler, .cardrel img {
   width: 12rem;
   height: auto;
-  box-shadow: 0.15rem 0.15rem 0.1rem white;
+  box-shadow: .15rem .15rem .1rem white;
 }
 
 .filler {
   height: 0;
-  margin: 0 0.75rem;
+  margin: 0 .75rem;
 }
 
 .index {
@@ -193,8 +197,7 @@ h2 {
 }
 
 .cardrel {
-  text-align: center;
-  font-size: 0.65rem;
+  font-size: .65rem;
   max-width: 9rem;
 }
 
@@ -207,14 +210,58 @@ h2 {
   font-size: .6rem;
 }
 
+.msg {
+  width: 13rem;
+  margin: auto;
+}
+
+form {
+  border: .1rem solid #121921;
+  border-radius: .75rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+form > div {
+  text-align: center;
+}
+
+label {
+  text-align: right;
+  width: 3.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+input, textarea, select {
+  width: 14rem;
+  margin: .1rem .5rem;
+  border-radius: 0;
+  vertical-align: baseline;
+}
+
+select {
+  width: 14.45rem;
+}
+
+.social img {
+  width: 5rem;
+  margin: 0;
+}
+
+.social > a {
+  margin: .75rem;
+  font-size: 1.5rem;
+}
+
 footer p, .cardrel {
   font-family: Tahoma, sans-serif;
   font-weight: bold;}
 
 footer p {
-  font-size: 0.55rem;
+  font-size: .55rem;
   color: #686868;
-  padding: 0.25rem 0.5rem;
+  padding: .25rem .5rem;
 }
 
 a:link, a:visited, a:active, .nav-btn, .shade {
@@ -225,8 +272,8 @@ a:hover, .nav-btn:hover {
   color: white;
 }
 .aut img:hover {
-  filter: drop-shadow(0.01rem 0.01rem 0.03rem #fff0ed) 
-          drop-shadow(-0.01rem -0.01rem 0.03rem #fff0ed);
+  filter: drop-shadow(.01rem .01rem .03rem #fff0ed) 
+          drop-shadow(-.01rem -.01rem .03rem #fff0ed);
 }
 a:focus {
   outline: 0;
@@ -281,7 +328,7 @@ a > img, .nav-btn {
   header, nav, main, .content {
     text-align: center;
   }
-  main, .content, .aut {
+  main, .aut, .con, .content {
     padding-top: 190px;
   }
   .content {
@@ -308,6 +355,13 @@ a > img, .nav-btn {
   .related > div {
     justify-content: space-evenly;
   }
+  label {
+    text-align: center;
+    margin-top: .5rem;
+  }
+  form > div:first-child > label {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 372px) {
@@ -318,14 +372,14 @@ a > img, .nav-btn {
     width: 80%;
   }
   nav {
-    padding: 0.25rem 0.25rem 0.1rem;
+    padding: .25rem .25rem .1rem;
   }
   .nav-btn {
     width: 29%;
-    margin: 0 0.3rem;
+    margin: 0 .3rem;
     font-size: 1.3rem;
   }
-  main, .content, .aut {
+  main, .aut, .con, .content {
     padding-top: 136px;
   }
   .pdf > .btn {
@@ -342,7 +396,7 @@ a > img, .nav-btn {
   }
   .buy > .btn:nth-child(2) {
     border-left:  0rem;
-    border-top:  0.01rem solid #8f8f8f;
+    border-top:  .01rem solid #8f8f8f;
     border-radius: 0 0 .75rem .75rem;
     margin: .75rem 0 -.75rem;
   }

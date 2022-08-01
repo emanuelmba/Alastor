@@ -75,7 +75,7 @@ main > div, .social > a {
 
 .aut, .con {
   justify-content: space-around;
-  padding: .75rem 0 .75rem .5rem;
+  padding: .75rem 0;
 }
 
 .aut > div {
@@ -237,10 +237,6 @@ form > div > label {
   display: inline-block;
 }
 
-labe l {
-  line-height: 1rem;
-}
-
 input, textarea, select {
   width: 14rem;
   margin: .3rem .5rem;
@@ -365,7 +361,7 @@ a > img, .nav-btn {
   .related > div {
     justify-content: space-evenly;
   }
-  label {
+  form > div > label {
     text-align: center;
     margin-top: .5rem;
   }

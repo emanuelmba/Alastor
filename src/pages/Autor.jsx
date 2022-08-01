@@ -20,6 +20,15 @@ function Autor() {
     setBanner('url(../imgs/alastor-aut.jpg)')
   }, [])
 
+  window.addEventListener('popstate', function (event) {
+    const validReq = authors.find(
+      (x) => x.url === window.location.pathname.substring(9)
+    )
+    if (validReq !== undefined) {
+      setAuthor(validReq)
+    }
+  })
+
   if (author.id === undefined) {
     return <div>Loading...</div>
   } else {

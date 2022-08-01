@@ -4,7 +4,7 @@ import Content from '../data/Content'
 import Card from '../components/Card'
 
 function Libro() {
-  const { book, setBook, books, setBanner, prices, mpago, fullTitle } =
+  const { book, setBook, books, setBanner, prices, mpago, fullTitle, findBook } =
     useContext(Content)
 
   useEffect(() => {
@@ -22,6 +22,13 @@ function Libro() {
 
   useEffect(() => {
     setBanner(`url(../imgs/alastor-${book.code}.jpg)`)
+  })
+
+  window.addEventListener('popstate', function (event) {
+    const validReq = books.find((x) => x.url === window.location.pathname.substring(10))
+    if (validReq !== undefined) {
+      setBook(validReq)
+    }
   })
 
   if (book.id === undefined) {

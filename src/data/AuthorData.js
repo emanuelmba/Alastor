@@ -189,8 +189,35 @@ const AuthorData = [
     ],
     rels: [2],
   },
+  {
+    id: 14,
+    name: 'Gottfried',
+    surname: 'Bürger',
+    url: 'gottfried-burger',
+    life: '(Molmerswende, Alemania, 1747 - Gotinga, Alemania, 1794)',
+    bio: 'Poeta y traductor alemán prerromántico principalmente recordado por su poesía popular y sus baladas, en especial por la imperecedera fama que le otorgó la célebre <em>Lenore</em>, obra que por sus tonos sobrenaturales y terroríficos revolucionó el ambiente literario y cultural de su época y abrió, junto a la novela gótica británica en boga por entonces, paso al Romanticismo y a toda la posterior literatura de horror, además de inspirar espeluznantes obras musicales de compositores como Anton Reicha o Joachim Raff. De igual valía es su siguiente balada sobrenatural, <em>El cazador salvaje</em>, que también dejó su sello en la cultura romántica e inspiró, como <em>Lenore</em>, innumerables obras de otras disciplinas, como ser un poema sinfónico de César Franck.',
+    trads: ['Lenore (comienzo)', 'El cazador salvaje'],
+    links: [
+      '../imgs/04-poesia-oscura-romantica.pdf',
+      'http://editorial-alastor.blogspot.com/2022/07/gottfried-burger-el-cazador-salvaje.html',
+    ],
+    rels: [4],
+  },
+  {
+    id: 15,
+    name: 'F. R.',
+    surname: 'de Chateaubriand',
+    url: 'f-r-chateaubriand',
+    life: '(Saint-Malo, Francia, 1768 - París, Francia, 1848)',
+    bio: 'Considerado, gracias a sus obras <em>Atala</em> y <em>René</em>, el fundador y principal impulsor del Romanticismo en la literatura francesa, el vizconde de Chateaubriand se destacó por una escritura que rompía los moldes de su época merced a su extremada melancolía, su afinidad con la naturaleza y su análisis de las subterráneas corrientes emocionales del hombre. De más vasto alcance y aliento fueron sus obras <em>El genio del cristianismo</em> y <em>Memorias de ultratumba</em>, pero quizás su mayor fuerte pueda encontrarse en varios de sus poemas breves, algunos de los cuales fueron incluidos en sus <em>Cuadros de la naturaleza</em>, obra entre cuyas páginas pueden encontrarse piezas de inusitada belleza solitaria.',
+    trads: ['Cuadros de la naturaleza (selección)'],
+    links: [
+      'http://editorial-alastor.blogspot.com/search/label/Chateaubriand%20F.%20R.%20de',
+    ],
+    rels: [4],
+  },
   /*{
-    id: 14 - 23,
+    id: 16-23,
     name: '',
     surname: '',
     url: '',
@@ -200,7 +227,7 @@ const AuthorData = [
     links: [''],
     rels: [4],
   },*/
-  /*sumar 10 primeros: burger goethe coleridge leopardi chateau lamartine musset leconte baudelaire rollinat;
+  /*sumar 8 más: goethe coleridge leopardi lamartine musset leconte baudelaire rollinat;
   faltan: tieck brentano chamisso eichendorff muller heine morike wesendonck, blake wordsworth southey moore tennyson swinburne, vigny borel gautier mallarme;
   luego: hoffmann irving hawthorne gogol gautier lautreamont huysmans wilde ¿cadalso becquer aikin raupach tolstoi? */
 ]

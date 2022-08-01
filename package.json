@@ -2,6 +2,7 @@
   "name": "alastor",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://www.editorial-alastor.com.ar",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",

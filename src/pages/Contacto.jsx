@@ -24,16 +24,19 @@ function Contacto() {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (
-      form.nombre === undefined ||
-      form.lugar === undefined ||
-      form.motivo === undefined ||
-      form.mensaje === undefined ||
-      form.email === undefined ||
+      form.nombre === '' ||
+      form.email === '' ||
+      form.motivo === '' ||
+      form.mensaje === ''
+    ) {
+      setMsg('Complete todos los campos.')
+      setColor('warning')
+    } else if (
       !form.email.includes('@') ||
       !form.email.includes('.') ||
       form.email.length < 6
     ) {
-      setMsg('Por favor, proporcione un email válido y complete todos los campos.')
+      setMsg('Proporcione un email válido.')
       setColor('warning')
     } else if (
       form.mensaje.includes(' SEO') ||
@@ -45,7 +48,12 @@ function Contacto() {
       setColor('spam')
       setForm('')
     } else {
-      send('service_nskvtlv', 'template_4hc4b1f', form, 'ccZ5vFm4cIv3YUA58')
+      send(
+        process.env.REACT_APP_EM_SERV,
+        process.env.REACT_APP_EM_TEMP,
+        form,
+        process.env.REACT_APP_EM_USER
+      )
         .then((response) => {})
         .catch((err) => {
           setMsg('Se ha producido un error. Vuelva a intentarlo más tarde.')

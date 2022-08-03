@@ -195,7 +195,7 @@ const AuthorData = [
     surname: 'Bürger',
     url: 'gottfried-burger',
     life: '(Molmerswende, Alemania, 1747 - Gotinga, Alemania, 1794)',
-    bio: 'Poeta y traductor alemán prerromántico principalmente recordado por su poesía popular y sus baladas, en especial por la imperecedera fama que le otorgó la célebre <em>Lenore</em>, obra que por sus tonos sobrenaturales y terroríficos revolucionó el ambiente literario y cultural de su época y abrió, junto a la novela gótica británica en boga por entonces, paso al Romanticismo y a toda la posterior literatura de horror, además de inspirar espeluznantes obras musicales de compositores como Anton Reicha o Joachim Raff. De igual valía es su siguiente balada sobrenatural, <em>El cazador salvaje</em>, que también dejó su sello en la cultura romántica e inspiró, como <em>Lenore</em>, innumerables obras de otras disciplinas, como ser un poema sinfónico de César Franck.',
+    bio: 'Poeta y traductor alemán prerromántico principalmente recordado por su poesía popular y sus baladas. Su salto a la fama se dio merced a su célebre <em>Lenore</em>, balada que, publicada pocos meses antes que el <em>Werther</em> de Goethe, resultó una influencia capital para la eclosión del Romanticismo germano, y que, por sus tonos sobrenaturales y terroríficos, revolucionó el ambiente literario y cultural europeo de la época y contribuyó tanto como la novela gótica británica a la creación de la literatura de horror. La obra inspiró ilustraciones de William Blake, traducciones de autores como Walter Scott, Dante Gabriel Rossetti y Gérard de Nerval, una espeluznante cantata del checo Anton Reicha que sería modelo para todas las obras musicales de terror del Romanticismo, y hasta una sinfonía de Joachim Raff. Bürger retornó años más tarde a la balada sobrenatural con <em>El cazador salvaje</em>, obra de similar valía que inspiró también varias producciones de otras disciplinas, incluyendo un poema sinfónico de César Franck.',
     trads: ['Lenore (comienzo)', 'El cazador salvaje'],
     links: [
       '../imgs/04-poesia-oscura-romantica.pdf',
@@ -205,19 +205,122 @@ const AuthorData = [
   },
   {
     id: 15,
-    name: 'F. R.',
-    surname: 'de Chateaubriand',
+    name: 'F. R. de',
+    surname: 'Chateaubriand',
     url: 'f-r-chateaubriand',
     life: '(Saint-Malo, Francia, 1768 - París, Francia, 1848)',
-    bio: 'Considerado, gracias a sus obras <em>Atala</em> y <em>René</em>, el fundador y principal impulsor del Romanticismo en la literatura francesa, el vizconde de Chateaubriand se destacó por una escritura que rompía los moldes de su época merced a su extremada melancolía, su afinidad con la naturaleza y su análisis de las subterráneas corrientes emocionales del hombre. De más vasto alcance y aliento fueron sus obras <em>El genio del cristianismo</em> y <em>Memorias de ultratumba</em>, pero quizás su mayor fuerte pueda encontrarse en varios de sus poemas breves, algunos de los cuales fueron incluidos en sus <em>Cuadros de la naturaleza</em>, obra entre cuyas páginas pueden encontrarse piezas de inusitada belleza solitaria.',
+    bio: 'Considerado, gracias a sus obras <em>Atala</em> y <em>René</em>, el fundador y principal impulsor del Romanticismo en la literatura francesa, el vizconde de Chateaubriand se destacó por una escritura que rompía los moldes de su época merced a su melancolía, su afinidad con la naturaleza y el aislamiento, y su análisis de las subterráneas corrientes emocionales del hombre. De mucho más vasto alcance y aliento fueron sus <em>Memorias de ultratumba</em>, una extensa obra autobiográfica que se publicó póstumamente, pero quizás sus mayores fortalezas literarias se manifiesten en varios de los poemas breves que componen sus <em>Cuadros de la naturaleza</em>, temprana colección de poesías entre cuyas páginas pueden encontrarse versos de inusitada belleza natural y de encendido culto a una soledad melancólica.',
     trads: ['Cuadros de la naturaleza (selección)'],
     links: [
-      'http://editorial-alastor.blogspot.com/search/label/Chateaubriand%20F.%20R.%20de',
+      'http://editorial-alastor.blogspot.com/2011/02/chateaubriand-el-bosque.html',
     ],
     rels: [4],
   },
   /*{
-    id: 16-23,
+    id: 16,
+    name: 'Johann Wolfgang von',
+    surname: 'Goethe',
+    url: 'j-w-goethe',
+    life: '(Fráncfort, Alemania, 1749 - Weimar, Alemania, 1832)',
+    bio: '',
+    trads: ['El rey de los elfos', 'Soledad'],
+    links: [
+      'http://editorial-alastor.blogspot.com/2014/07/goethe-el-rey-de-los-elfos-der-erlkonig.html',
+      'http://editorial-alastor.blogspot.com/2016/08/johann-wolfgang-von-goethe-soledad.html',
+    ],
+    rels: [4],
+  },
+  {
+    id: 17,
+    name: 'Samuel Taylor',
+    surname: 'Coleridge',
+    url: 's-t-coleridge',
+    life: '()',
+    bio: '',
+    trads: ['La balada del viejo marinero'],
+    links: [
+      'http://editorial-alastor.blogspot.com/2016/08/samuel-taylor-coleridge-la-rima-del.html',
+    ],
+    rels: [4],
+  },
+  {
+    id: 18,
+    name: 'Alphonse de',
+    surname: 'Lamartine',
+    url: 'alphonse-lamartine',
+    life: '()',
+    bio: '',
+    trads: ['Meditaciones poéticas (selección)'],
+    links: [
+      'http://editorial-alastor.blogspot.com/2011/02/lamartine-meditaciones-poeticas.html',
+    ],
+    rels: [4],
+  },
+  {
+    id: 19,
+    name: 'Giacomo',
+    surname: 'Leopardi',
+    url: 'giacomo-leopardi',
+    life: '()',
+    bio: '',
+    trads: ['Cantos (selección)'],
+    links: ['http://editorial-alastor.blogspot.com/2011/02/leopardi-cantos.html'],
+    rels: [4],
+  },
+  {
+    id: 20,
+    name: 'Charles',
+    surname: 'Baudelaire',
+    url: 'charles-baudelaire',
+    life: '()',
+    bio: '',
+    trads: ['Las flores del mal (selección)'],
+    links: [
+      'http://editorial-alastor.blogspot.com/2011/02/baudelaire-las-flores-del-mal.html',
+    ],
+    rels: [4],
+  },
+  {
+    id: 21,
+    name: 'Alfred de',
+    surname: 'Musset',
+    url: 'alfred-musset',
+    life: '()',
+    bio: '',
+    trads: ['Las noches (selección)'],
+    links: [
+      'http://editorial-alastor.blogspot.com/2014/07/alfred-de-musset-las-noches.html',
+    ],
+    rels: [4],
+  },
+  {
+    id: 22,
+    name: 'Charles Marie',
+    surname: 'Leconte de Lisle',
+    url: 'leconte-lisle',
+    life: '()',
+    bio: '',
+    trads: ['Poemas bárbaros (selección)'],
+    links: [
+      'http://editorial-alastor.blogspot.com/2016/08/c-m-leconte-de-lisle-el-frio-viento-de.html',
+    ],
+    rels: [4],
+  },
+  {
+    id: 23,
+    name: 'Maurice',
+    surname: 'Rollinat',
+    url: 'maurice-rollinat',
+    life: '()',
+    bio: '',
+    trads: ['Las neurosis (selección)'],
+    links: [
+      'http://editorial-alastor.blogspot.com/2022/07/maurice-rollinat-las-neurosis.html',
+    ],
+    rels: [4],
+  },*/
+  /*{
+    id: 24,
     name: '',
     surname: '',
     url: '',
@@ -227,9 +330,8 @@ const AuthorData = [
     links: [''],
     rels: [4],
   },*/
-  /*sumar 8 más: goethe coleridge leopardi lamartine musset leconte baudelaire rollinat;
-  faltan: tieck brentano chamisso eichendorff muller heine morike wesendonck, blake wordsworth southey moore tennyson swinburne, vigny borel gautier mallarme;
-  luego: hoffmann irving hawthorne gogol gautier lautreamont huysmans wilde ¿cadalso becquer aikin raupach tolstoi? */
+  /* faltan: life+bio x8;
+  sxix2: hoffmann irving hawthorne gogol gautier lautreamont huysmans wilde: reliques: milton y tres más (cambiar foto de Otros autores x Tennyson); */
 ]
 
 export default AuthorData

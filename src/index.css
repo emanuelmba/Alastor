@@ -212,15 +212,13 @@ h2 {
 .msg {
   width: 13rem;
   margin: auto;
+  font-weight: 600;
 }
 .msg-warning {
   color: yellowgreen;
 }
-.msg-spam {
+.msg-error {
   color: firebrick
-}
-.msg-ok {
-  color: lightseagreen
 }
 
 form {

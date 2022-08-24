@@ -22,20 +22,17 @@ function Contacto() {
   }
 
   const handleSubmit = (e) => {
+    const regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,6})$/
     e.preventDefault()
     if (
       form.nombre === '' ||
       form.email === '' ||
-      form.motivo === '' ||
+      form.lugar === '' ||
       form.mensaje === ''
     ) {
       setMsg('Complete todos los campos.')
       setColor('warning')
-    } else if (
-      !form.email.includes('@') ||
-      !form.email.includes('.') ||
-      form.email.length < 6
-    ) {
+    } else if (!regex.test(form.email)) {
       setMsg('Proporcione un email válido.')
       setColor('warning')
     } else if (
@@ -45,7 +42,7 @@ function Contacto() {
       form.mensaje.includes('.ru')
     ) {
       setMsg('Su spam no es nada bienvenido. ¡Fuera de aquí!')
-      setColor('spam')
+      setColor('error')
       setForm('')
     } else {
       send(
@@ -54,13 +51,14 @@ function Contacto() {
         form,
         process.env.REACT_APP_EM_USER
       )
-        .then((response) => {})
+        .then((response) => {
+          setMsg('Su mensaje ha sido enviado. Recibirá respuesta a la brevedad.')
+          setColor('')
+        })
         .catch((err) => {
           setMsg('Se ha producido un error. Vuelva a intentarlo más tarde.')
-          setColor('spam')
+          setColor('error')
         })
-      setMsg('Su mensaje ha sido enviado. Recibirá respuesta a la brevedad.')
-      setColor('ok')
       setForm('')
     }
   }
@@ -89,7 +87,7 @@ function Contacto() {
           <div>
             <label>Email</label>
             <input
-              type='text'
+              type='email'
               name='email'
               value={form.email || ''}
               onChange={handleChange}

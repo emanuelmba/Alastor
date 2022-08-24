@@ -59,6 +59,8 @@ function Contacto() {
           setMsg('Se ha producido un error. Vuelva a intentarlo más tarde.')
           setColor('error')
         })
+      setMsg('Su mensaje se está enviando. Aguarde un momento.')
+      setColor('warning')
       setForm('')
     }
   }

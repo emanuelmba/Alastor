@@ -89,11 +89,23 @@ function Libro() {
             </div>
             <div className='buy'>
               {book.mlibre !== '' && (
-                <a className='btn' href={book.mlibre} target='_blank' rel='noreferrer'>
+                <a
+                  className='btn'
+                  href={book.mlibre}
+                  target='_blank'
+                  rel='noreferrer'
+                  title={'MercadoLibre: $ ' + prices[book.price]}
+                >
                   <FaBook /> &nbsp;Comprar libro
                 </a>
               )}
-              <a className='btn' href={mpago} target='_blank' rel='noreferrer'>
+              <a
+                className='btn'
+                href={mpago}
+                target='_blank'
+                rel='noreferrer'
+                title={'MercadoPago: $ ' + prices[0]}
+              >
                 <FaTabletAlt /> &nbsp;Comprar ebook
               </a>
             </div>

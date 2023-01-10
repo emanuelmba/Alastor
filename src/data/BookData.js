@@ -19,7 +19,7 @@ const BookData = [
     id: 3,
     code: '03',
     author: 'P. B. Shelley / John Keats',
-    title: 'Adonais',
+    title: 'Adonais y otros poemas',
     url: '03-shelley-keats-adonais',
     isbn: '978-987-26668-2-8',
     pags: 192,

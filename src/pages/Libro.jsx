@@ -57,6 +57,27 @@ function Libro() {
           >
             <FaRegFilePdf /> &nbsp;Descargar muestra
           </a>
+          <br />
+          <p className='howtobuy'>
+            <b>CÓMO COMPRAR</b>
+            <br />
+            <br />
+            <b>Libro físico: </b>Por MercardoLibre, con el botón de <i>Comprar libro</i>
+            , o de manera directa vía mail o formulario de contacto. Métodos de pago:
+            transferencia bancaria, MercadoPago, efectivo. Métodos de entrega: retiro en
+            persona por Villa Devoto (CABA, Argentina), entregas en CABA (consultar
+            precio según zona), envíos por Correo Argentino.
+            <br />
+            <br />
+            <b>Versión ebook: </b>Por MercadoPago, con el botón de <i>Comprar ebook</i>,
+            y contactando luego a la editorial mencionando el título adquirido, el
+            formato de archivo requerido (epub o mobi) y un mail en el cual recibirlo.
+            <br />
+            <br />
+            <b>Fuera de Argentina: </b>Vía mail o formulario de contacto. Consultar
+            precio en dólares y costo del envío para el caso de libros físicos. Métodos
+            de pago: PayPal, WesternUnion, Airtm.
+          </p>
         </div>
 
         <div className='info'>
@@ -118,6 +139,8 @@ function Libro() {
             <div className='index' dangerouslySetInnerHTML={{ __html: book.index }} />
           </div>
         </div>
+
+        <div className='mock'></div>
       </main>
     )
   }

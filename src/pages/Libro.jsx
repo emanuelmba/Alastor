@@ -47,7 +47,7 @@ function Libro() {
           />
         </Card>
 
-        <div className='pdf'>
+        <aside className='pdf'>
           <br />
           <a
             className='btn'
@@ -78,7 +78,7 @@ function Libro() {
             precio en dólares y costo del envío para el caso de libros físicos. Métodos
             de pago: PayPal, WesternUnion, Airtm.
           </p>
-        </div>
+        </aside>
 
         <div className='info'>
           <div>
@@ -140,7 +140,7 @@ function Libro() {
           </div>
         </div>
 
-        <div className='mock'></div>
+        <div className='related'></div>
       </main>
     )
   }

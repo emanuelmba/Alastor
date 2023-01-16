@@ -46,9 +46,9 @@ function Autor() {
           />
         </Card>
 
-        <div className='pdf'>
+        <aside className='pdf'>
           <br />
-        </div>
+        </aside>
 
         <div className='info'>
           <div>

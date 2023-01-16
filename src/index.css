@@ -65,7 +65,7 @@ main {
   justify-content: space-between;
 }
 
-main > div, .social > a {
+main > div, main > aside, .social > a {
   margin: .75rem;
 }
 
@@ -76,10 +76,6 @@ main > div, .social > a {
 .aut, .con {
   justify-content: space-around;
   padding: .75rem 0;
-}
-
-.aut > div {
-  margin: 0;
 }
 
 .aut img {
@@ -160,11 +156,6 @@ main > div, .social > a {
 .buy > .btn:nth-child(2) {
   border-left:  .001rem solid #8f8f8f;
   border-radius: 0 .75rem .75rem 0;
-}
-
-.mock {
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
 }
 
 h1 {
@@ -403,9 +394,6 @@ a > img, .nav-btn {
   }
   form > div:first-child > label {
     margin-top: 0;
-  }
-  .mock {
-    display: none;
   }
   footer {
     text-align: center;

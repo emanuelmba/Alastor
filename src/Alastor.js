@@ -8,6 +8,7 @@ import Libro from './pages/Libro'
 import Autores from './pages/Autores'
 import Autor from './pages/Autor'
 import Contacto from './pages/Contacto'
+import Error404 from './pages/Error404'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Header />
             <Routes>
               <Route exact path='/' element={<Catalogo />} />
-              <Route path='/*' element={<Catalogo />} />
+              <Route path='/*' element={<Error404 />} />
               <Route path='/catalogo' element={<Catalogo />} />
               <Route path='/catalogo/:url' element={<Libro />} />
               <Route path='/autores' element={<Autores />} />

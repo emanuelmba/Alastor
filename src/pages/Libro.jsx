@@ -15,7 +15,7 @@ function Libro() {
       if (validReq !== undefined) {
         setBook(validReq)
       } else {
-        window.location = '/'
+        window.location = '/Error404'
       }
     }
   }, [])
@@ -63,7 +63,7 @@ function Libro() {
             <br />
             <br />
             <b>Libro físico: </b>Por MercardoLibre, con el botón de <i>Comprar libro</i>
-            , o de manera directa vía mail o formulario de contacto. Métodos de pago:
+            , o de manera directa vía email o formulario de contacto. Métodos de pago:
             transferencia bancaria, MercadoPago, efectivo. Métodos de entrega: retiro en
             persona por Villa Devoto (CABA, Argentina), entregas en CABA (consultar
             precio según zona), envíos por Correo Argentino.
@@ -71,10 +71,10 @@ function Libro() {
             <br />
             <b>Versión ebook: </b>Por MercadoPago, con el botón de <i>Comprar ebook</i>,
             y contactando luego a la editorial mencionando el título adquirido, el
-            formato de archivo requerido (epub o mobi) y un mail en el cual recibirlo.
+            formato de archivo requerido (epub o mobi) y un email en el cual recibirlo.
             <br />
             <br />
-            <b>Fuera de Argentina: </b>Vía mail o formulario de contacto. Consultar
+            <b>Fuera de Argentina: </b>Vía email o formulario de contacto. Consultar
             precio en dólares y costo del envío para el caso de libros físicos. Métodos
             de pago: PayPal, WesternUnion, Airtm.
           </p>

@@ -14,7 +14,7 @@ function Autor() {
       if (validReq !== undefined) {
         setAuthor(validReq)
       } else {
-        window.location = '/'
+        window.location = '/Error404'
       }
     }
     setBanner('url(../imgs/alastor-aut.jpg)')

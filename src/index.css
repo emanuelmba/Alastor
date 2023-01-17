@@ -65,7 +65,7 @@ main {
   justify-content: space-between;
 }
 
-main > div, main > aside, .social > a {
+main > div, figure, article, section, aside, .social > a {
   margin: .75rem;
 }
 
@@ -95,7 +95,7 @@ main > div, main > aside, .social > a {
   display: grid;
 }
 
-.card {
+figure {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
@@ -104,17 +104,17 @@ main > div, main > aside, .social > a {
  margin: 0 2.25rem 0 0;
 }
 
-.pdf {
+aside {
   grid-column: 1 / span 1;
   grid-row: 2 / span 2;
 }
 
-.pdf > .btn {
+aside > .btn {
   border: .01rem solid #8f8f8f;
   padding: .75rem 2rem;
 }
 
-.pdf p {
+aside p {
   font-size: .65rem;
   color: #686868;
 }
@@ -124,17 +124,17 @@ main > div, main > aside, .social > a {
   width: 12rem;
 }
 
-.info {
+article {
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
 }
 
-.info > div {
+article > div {
   margin-bottom: 1.5rem;;
   font-size: .75rem;
 }
 
-.info > div:last-child {
+article > div:last-child {
   margin-bottom: 0;
 }
 
@@ -167,7 +167,7 @@ h2 {
   font-weight: lighter;
 }
 
-.card img, .filler, .cardrel img {
+figure img, .filler, .cardrel img {
   width: 12rem;
   height: auto;
   box-shadow: .15rem .15rem .1rem white;
@@ -180,7 +180,7 @@ h2 {
 
 .index {
 	background-color: #fff0ed;
-	margin: .75rem 0 -1rem;
+	margin: .75rem 0;
 	border-radius:.75rem;
 	color: #000;
 }
@@ -190,12 +190,12 @@ h2 {
 	font-style: italic;
 }
 
-.related {
+section {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
 }
 
-.related > .rel {
+section > .rel {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -332,7 +332,7 @@ a > img, .nav-btn {
   main {
     justify-content: space-evenly;
   }
-  .card, .pdf {
+  figure, aside {
     margin: .75rem 1rem;
   }
   .filler {
@@ -360,21 +360,9 @@ a > img, .nav-btn {
   .cover {
     margin: 0;
   }
-  .info {
+  article {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
-  }
-  .pdf {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-    padding: .75rem 0;
-  }
-  .pdf > .btn {
-    margin-left: 0;
-  }
-  .howtobuy {
-    width: auto;
-    margin-top: 2.5rem;
   }
   .specs {
     align-items: center;
@@ -382,11 +370,27 @@ a > img, .nav-btn {
   .index {
     margin-bottom: -.5rem;
   }
-  .related {
+  section {
     grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
   }
-  .related > div {
+  section > div {
     justify-content: space-evenly;
+  }
+  aside {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    padding: .75rem 0;
+  }
+  aside > .btn {
+    margin-left: 0;
+  }
+  .howtobuy {
+    width: auto;
+    margin-top: 2.5rem;
+  }
+  .none {
+    display: none;
   }
   form > div > label {
     text-align: center;
@@ -419,7 +423,7 @@ a > img, .nav-btn {
   main, .aut, .con, .content {
     padding-top: 136px;
   }
-  .pdf > .btn {
+  aside > .btn {
     margin: -.75rem 0 -1.75rem;
     display: block;
   }

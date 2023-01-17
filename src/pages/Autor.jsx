@@ -46,11 +46,11 @@ function Autor() {
           />
         </Card>
 
-        <aside className='pdf'>
+        <aside className='none'>
           <br />
         </aside>
 
-        <div className='info'>
+        <article>
           <div>
             <h1>{fullName(author)}</h1>
             <span className='shade'>{author.life}</span>
@@ -69,9 +69,9 @@ function Autor() {
               </p>
             ))}
           </div>
-        </div>
+        </article>
 
-        <div className='related'>
+        <section>
           <div>
             <strong>Libros del autor en Editorial Alastor:</strong>
           </div>
@@ -80,7 +80,7 @@ function Autor() {
               <RelatedItem key={item.id} item={item} />
             ))}
           </div>
-        </div>
+        </section>
       </main>
     )
   }

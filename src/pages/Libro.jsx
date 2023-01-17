@@ -2,6 +2,7 @@ import { useContext, useEffect } from 'react'
 import { FaRegFilePdf, FaBook, FaTabletAlt } from 'react-icons/fa'
 import Content from '../data/Content'
 import Card from '../components/Card'
+import RelatedItem from '../components/RelatedItem'
 
 function Libro() {
   const { book, setBook, books, setBanner, prices, mpago, fullTitle, findBook } =
@@ -35,6 +36,7 @@ function Libro() {
     return <div>Loading...</div>
   } else {
     document.title = `Editorial Alastor | ${fullTitle(book)}`
+    const related = books.filter((item) => book.rels.includes(item.id))
 
     return (
       <main className='content'>
@@ -47,7 +49,7 @@ function Libro() {
           />
         </Card>
 
-        <aside className='pdf'>
+        <aside>
           <br />
           <a
             className='btn'
@@ -80,7 +82,7 @@ function Libro() {
           </p>
         </aside>
 
-        <div className='info'>
+        <article>
           <div>
             <h2>{book.author}</h2>
             <h1>{book.title}</h1>
@@ -138,9 +140,18 @@ function Libro() {
             <strong>Contenidos</strong>
             <div className='index' dangerouslySetInnerHTML={{ __html: book.index }} />
           </div>
-        </div>
+        </article>
 
-        <div className='related'></div>
+        <section>
+          <div>
+            <strong>Otros títulos relacionados:</strong>
+          </div>
+          <div className='rel'>
+            {related.map((item) => (
+              <RelatedItem key={item.id} item={item} />
+            ))}
+          </div>
+        </section>
       </main>
     )
   }

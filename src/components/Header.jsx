@@ -11,11 +11,9 @@ function Header() {
 
   return (
     <header style={headerImg}>
-      <div>
-        <Link to='/'>
-          <img className='logo fade' src={'../imgs/logo.png'} alt='Editorial Alastor' />
-        </Link>
-      </div>
+      <Link to='/'>
+        <img className='logo fade' src={'../imgs/logo.png'} alt='Editorial Alastor' />
+      </Link>
       <nav>
         <Link to='/catalogo'>
           <button className='nav-btn'>Catálogo</button>

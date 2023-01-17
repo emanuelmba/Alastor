@@ -1,5 +1,5 @@
 function Card({ children }) {
-  return <div className='card'>{children}</div>
+  return <figure>{children}</figure>
 }
 
 export default Card

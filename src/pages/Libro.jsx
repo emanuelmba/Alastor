@@ -5,7 +5,7 @@ import Card from '../components/Card'
 import RelatedItem from '../components/RelatedItem'
 
 function Libro() {
-  const { book, setBook, books, setBanner, prices, mpago, fullTitle, findBook } =
+  const { book, setBook, books, setBanner, prices, mpago, fullTitle } =
     useContext(Content)
 
   useEffect(() => {

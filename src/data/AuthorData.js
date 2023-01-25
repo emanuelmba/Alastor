@@ -270,13 +270,13 @@ const AuthorData = [
     links: ['http://editorial-alastor.blogspot.com/2011/02/leopardi-cantos.html'],
     rels: [4],
   },
-  /*{
+  {
     id: 20,
     name: 'Charles',
     surname: 'Baudelaire',
     url: 'charles-baudelaire',
-    life: '()',
-    bio: '',
+    life: '(París, Francia, 1821 - París, Francia, 1867)',
+    bio: 'Autor, con sus tan sublimes como satánicas y angustiantes <em>Flores del mal</em>, de una de las obras fundamentales en la evolución de la poesía moderna, Charles Baudelaire ha pasado a la historia como el arquetipo del «poeta maldito». De vida bohemia y disipada, en contradicción con la moral dominante en su tiempo, su trabajo, que abreva tanto de las fuentes más oscuras del Romanticismo como de las alucinadas obras de Edgar Allan Poe, sirvió de base para movimientos estéticos posrrománticos como el simbolismo y el decadentismo, además de haber participado en un incipiente parnasianismo y de ser mencionado entre las numerosas y dispares fuentes del surrealismo. También contribuyó notablemente, con <em>El spleen de París</em>, al establecimiento del poema en prosa como género.',
     trads: ['Las flores del mal (selección)'],
     links: [
       'http://editorial-alastor.blogspot.com/2011/02/baudelaire-las-flores-del-mal.html',
@@ -288,8 +288,8 @@ const AuthorData = [
     name: 'Alfred de',
     surname: 'Musset',
     url: 'alfred-musset',
-    life: '()',
-    bio: '',
+    life: '(París, Francia, 1810 - París, Francia, 1857)',
+    bio: 'Autor de poesías, obras de teatro y novelas de inclinación fuertemente melodramática, Alfred de Musset fue tal vez el principal exponente del sentimentalismo romántico francés. Lo más rico de su producción sin duda se centra en los escritos que siguieron a la ruptura de su turbulenta relación amorosa con la novelista George Sand, entre los que pueden contarse su novela <em>La confesión de un hijo del siglo</em> y las emblemáticas poesías reunidas bajo el título de <em>Las noches</em>, en las que toda la sensibilidad emocional del Romanticismo alcanza tal vez su mayor pico de exageración y patetismo. En su obra teatral, de factura bastante más formal, destacan los dramas <em>Lorenzaccio</em>, <em>Los caprichos de Mariana</em>, <em>No se juega con el amor</em> y <em>Fantasio</em>.',
     trads: ['Las noches (selección)'],
     links: [
       'http://editorial-alastor.blogspot.com/2014/07/alfred-de-musset-las-noches.html',
@@ -301,8 +301,8 @@ const AuthorData = [
     name: 'Charles Marie',
     surname: 'Leconte de Lisle',
     url: 'leconte-lisle',
-    life: '()',
-    bio: '',
+    life: '(Reunión, Francia, 1818 - Voisins, Francia, 1894)',
+    bio: 'Principal figura del parnasianismo, movimiento poético de temáticas generalmente neoclásicas que, influenciado por la doctrina de Théophile Gautier sobre «el arte por el arte» y las teorías estéticas de Arthur Schopenhauer, surgió como una reacción tanto contra el excesivo sentimentalismo del Romanticismo francés como contra el activismo político y social de las corrientes realista y naturalista. La parte más importante de la poesía de Lectonte de Lisle se centra en sus colecciones <em>Poemas antiguos</em>, <em>Poemas bárbaros</em> y <em>Poemas trágicos</em>, aunque su producción fue mucho más copiosa e incluyó hasta dramas y tragedias líricas hechas a imitación del teatro griego antiguo, como en el caso de <em>Las erinias</em>.',
     trads: ['Poemas bárbaros (selección)'],
     links: [
       'http://editorial-alastor.blogspot.com/2016/08/c-m-leconte-de-lisle-el-frio-viento-de.html',
@@ -314,14 +314,14 @@ const AuthorData = [
     name: 'Maurice',
     surname: 'Rollinat',
     url: 'maurice-rollinat',
-    life: '()',
-    bio: '',
+    life: '(Indre, Francia, 1846 - París, Francia, 1903)',
+    bio: 'Tras una temprana incursión en los terrenos de la literatura realista, Rollinat abrazó sin ambages la refinada estética del decadentismo y no tardó en volverse un arquetípico exponente del ideal de «poeta maldito». Lo más importante de su producción poética, que solía recitar por las noches en un cabaret acompañándose con el piano, se reúne en su colección <em>Las neurosis</em>, en la que se evidencia la insoslayable influencia de los momentos más oscuros y macabros de los relatos de horror de Poe y del simbolismo de la poesía de Baudelaire. La obra se divide en diferentes secciones que llevan títulos como «Las almas», «Las lujurias», «Los espectros» y «Las tinieblas». Algunas de sus siguientes producciones fueron <em>El abismo</em>, <em>Las apariciones</em> y <em>Prosas de un solitario</em>, si bien ya no volvió a alcanzar la diabólica intensidad de aquella primera colección.',
     trads: ['Las neurosis (selección)'],
     links: [
       'http://editorial-alastor.blogspot.com/2022/07/maurice-rollinat-las-neurosis.html',
     ],
     rels: [4],
-  },*/
+  },
   /*{
     id: 24,
     name: '',
@@ -334,8 +334,8 @@ const AuthorData = [
     rels: [4],
   },*/
   /* sxix: life+bio x4;
-  reliques: petrarca, milton (cambiar foto de Otros autores x Tennyson) y dos más (di morra? birague? d'aubigné? saint-amant? young? macpherson? chatterton?); 
-  sxix2: hoffmann irving hawthorne gogol gautier lautreamont huysmans wilde; dunsany; howard; */
+  reliques: milton (cambiar foto de Otros autores x Tennyson), d'aubigné y dos más (petrarca? birague? saint-amant? blair? chatterton? entradas blogspot: poesía de cementerio, neopetrarquismo francés, disperata); 
+  sxix2: hoffmann irving hawthorne gogol hearn lautreamont huysmans wilde; dunsany; howard; */
 ]
 
 export default AuthorData

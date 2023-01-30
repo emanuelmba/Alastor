@@ -18,7 +18,11 @@ function Autores() {
       {authors.map((item) => (
         <AuthorsItem key={item.id} item={item} />
       ))}
-      <a href='http://editorial-alastor.blogspot.com/' target='_blank' rel='noreferrer'>
+      <a
+        href='https://editorial-alastor.blogspot.com/'
+        target='_blank'
+        rel='noreferrer'
+      >
         <img
           className='unfade'
           src='../imgs/th-otros-autores.png'

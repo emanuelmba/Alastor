@@ -8,9 +8,9 @@ const AuthorData = [
     bio: 'Figura clave del movimiento romántico que revolucionó Europa a comienzos del siglo <span class="vers">XIX</span>, Lord Byron no sólo legó a la posteridad una de las biografías más ricas y notables del período, sino sobre todo una invalorable obra poética en la que, tras la perfección de sus versos y las tormentas internas de sus sublimes y contradictorios «héroes byronianos», vertió todo su inmortal dolor, su desdén por un bajo mundo con el que nada tenía en común, su amargo pesimismo, su solitario orgullo y sus románticos anhelos de gloria y libertad. Entre sus obras más destacables se encuentran <em>La peregrinación de Childe Harold</em>, <em>Lara</em>, <em>El corsario</em>, <em>Manfred</em>, <em>Las lamentaciones del Tasso</em>, <em>Beppo</em>, <em>Don Juan</em>, <em>Caín</em> y <em>Sardanápalo</em>.',
     trads: ['Manfred (fragmentos)', 'Caín (fragmentos)', 'Oscuridad'],
     links: [
-      'http://editorial-alastor.blogspot.com/2011/02/lord-byron-manfred.html',
-      'http://editorial-alastor.blogspot.com/2012/01/lord-byron-cain-fragmentos.html',
-      'http://editorial-alastor.blogspot.com/2011/02/lord-byron-oscuridad.html',
+      'https://editorial-alastor.blogspot.com/2011/02/lord-byron-manfred.html',
+      'https://editorial-alastor.blogspot.com/2012/01/lord-byron-cain-fragmentos.html',
+      'https://editorial-alastor.blogspot.com/2011/02/lord-byron-oscuridad.html',
     ],
     rels: [1, 4],
   },
@@ -30,12 +30,12 @@ const AuthorData = [
       'Ozymandias',
     ],
     links: [
-      'http://editorial-alastor.blogspot.com/2011/02/shelley-lineas.html',
-      'http://editorial-alastor.blogspot.com/2011/02/shelley-invocacion-la-miseria.html',
-      'http://editorial-alastor.blogspot.com/2016/05/p-b-shelley-oda-al-viento-oeste.html',
-      'http://editorial-alastor.blogspot.com/2016/08/p-b-shelley-una-alondra.html',
-      'http://editorial-alastor.blogspot.com/2016/05/p-b-shelley-adonais.html',
-      'http://editorial-alastor.blogspot.com/2011/02/shelley-ozymandias.html',
+      'https://editorial-alastor.blogspot.com/2011/02/shelley-lineas.html',
+      'https://editorial-alastor.blogspot.com/2011/02/shelley-invocacion-la-miseria.html',
+      'https://editorial-alastor.blogspot.com/2016/05/p-b-shelley-oda-al-viento-oeste.html',
+      'https://editorial-alastor.blogspot.com/2016/08/p-b-shelley-una-alondra.html',
+      'https://editorial-alastor.blogspot.com/2016/05/p-b-shelley-adonais.html',
+      'https://editorial-alastor.blogspot.com/2011/02/shelley-ozymandias.html',
     ],
     rels: [3, 4],
   },
@@ -55,12 +55,12 @@ const AuthorData = [
       'Lamia (fragmento)',
     ],
     links: [
-      'http://editorial-alastor.blogspot.com/2011/02/keats-la-belle-dame-sans-merci.html',
-      'http://editorial-alastor.blogspot.com/2011/02/keats-oda-una-urna-griega.html',
-      'http://editorial-alastor.blogspot.com/2016/08/john-keats-oda-un-ruisenor.html',
-      'http://editorial-alastor.blogspot.com/2011/02/keats-himno-pan.html',
-      'http://editorial-alastor.blogspot.com/2016/05/john-keats-hiperion.html',
-      'http://editorial-alastor.blogspot.com/2016/05/john-keats-lamia.html',
+      'https://editorial-alastor.blogspot.com/2011/02/keats-la-belle-dame-sans-merci.html',
+      'https://editorial-alastor.blogspot.com/2011/02/keats-oda-una-urna-griega.html',
+      'https://editorial-alastor.blogspot.com/2016/08/john-keats-oda-un-ruisenor.html',
+      'https://editorial-alastor.blogspot.com/2011/02/keats-himno-pan.html',
+      'https://editorial-alastor.blogspot.com/2016/05/john-keats-hiperion.html',
+      'https://editorial-alastor.blogspot.com/2016/05/john-keats-lamia.html',
     ],
     rels: [3, 4],
   },
@@ -202,7 +202,7 @@ const AuthorData = [
     trads: ['Lenore (comienzo)', 'El cazador salvaje'],
     links: [
       '../imgs/04-poesia-oscura-romantica.pdf',
-      'http://editorial-alastor.blogspot.com/2022/07/gottfried-burger-el-cazador-salvaje.html',
+      'https://editorial-alastor.blogspot.com/2022/07/gottfried-burger-el-cazador-salvaje.html',
     ],
     rels: [4],
   },
@@ -215,7 +215,7 @@ const AuthorData = [
     bio: 'Considerado, gracias a sus obras <em>Atala</em> y <em>René</em>, el fundador y principal impulsor del Romanticismo en la literatura francesa, el vizconde de François-René de Chateaubriand se destacó por una escritura que rompía los moldes de su época merced a su melancolía, su afinidad con la naturaleza, su inclinación por el aislamiento y su análisis de las subterráneas corrientes emocionales del hombre. De mucho más vasto alcance y aliento fueron sus <em>Memorias de ultratumba</em>, una extensa obra autobiográfica que se publicó póstumamente, pero quizás sus mayores fortalezas literarias se manifiesten en varios de los poemas breves que componen sus <em>Cuadros de la naturaleza</em>, temprana colección de poesías entre cuyas páginas pueden encontrarse versos de inusitada belleza y de encendido culto a una melancólica soledad.',
     trads: ['Cuadros de la naturaleza (selección)'],
     links: [
-      'http://editorial-alastor.blogspot.com/2011/02/chateaubriand-el-bosque.html',
+      'https://editorial-alastor.blogspot.com/2011/02/chateaubriand-el-bosque.html',
     ],
     rels: [4],
   },
@@ -228,8 +228,8 @@ const AuthorData = [
     bio: 'Mediante su participación en el movimiento estético <em>Sturm und Drang</em>, que lo asoció al poeta Friedrich Schiller, Goethe fue uno de los principales precursores del Romanticismo alemán, al cual acaso dio inicio formal con la publicación de su influyente novela epistolar <em>Werther</em>. Figura cimera de las letras occidentales de todos los tiempos, Goethe cultivó la poesía lírica, la balada, la novela, el ensayo científico y el drama, destacándose con solidez en todos los campos por igual. Algunas de sus obras más reconocidas son <em>El rey de los elfos</em>, <em>El pescador</em>, <em>La novia de Corinto</em>, <em>Wilhelm Meister</em>, <em>Egmont</em>, <em>Diván de Oriente y Occidente</em>, <em>Las afinidades electivas</em> y, sobre todo, las dos partes de su inmortal clásico <em>Fausto</em>.',
     trads: ['El rey de los elfos', 'Soledad'],
     links: [
-      'http://editorial-alastor.blogspot.com/2014/07/goethe-el-rey-de-los-elfos-der-erlkonig.html',
-      'http://editorial-alastor.blogspot.com/2016/08/johann-wolfgang-von-goethe-soledad.html',
+      'https://editorial-alastor.blogspot.com/2014/07/goethe-el-rey-de-los-elfos-der-erlkonig.html',
+      'https://editorial-alastor.blogspot.com/2016/08/johann-wolfgang-von-goethe-soledad.html',
     ],
     rels: [4],
   },
@@ -242,7 +242,7 @@ const AuthorData = [
     bio: 'Poeta inglés que, mediante la publicación junto a William Wordsworth del volumen <em>Lyrical Ballads</em>, dio inicio formal al Romanticismo en Gran Bretaña. Su principal aporte a dicha obra fue el de <em>La balada del viejo marinero</em>, que mostraba marcadas influencias del auge medievalista y arcaizante que se había suscitado en toda Europa tras la publicación de las <em>Reliques of Ancient English Poetry</em> de Thomas Percy, compendio de baladas antiguas entre las que había varias inclinadas a las temáticas de horror. Entre otros grandes aportes hechos por Coleridge a la poesía inglesa durante los años siguientes, en los que además se dedicó a la crítica y la teología, es posible mencionar obras como <em>Kubla Khan</em>, <em>Christabel</em>, <em>The Three Graves</em>, <em>Frost at Midnight</em> y <em>Dejection: An Ode</em>.',
     trads: ['La balada del viejo marinero'],
     links: [
-      'http://editorial-alastor.blogspot.com/2016/08/samuel-taylor-coleridge-la-rima-del.html',
+      'https://editorial-alastor.blogspot.com/2016/08/samuel-taylor-coleridge-la-rima-del.html',
     ],
     rels: [4],
   },
@@ -255,7 +255,7 @@ const AuthorData = [
     bio: 'Merced a la publicación em 1820 de su influyente colección de poemas <em>Meditaciones poéticas</em>, el político francés Alphonse de Lamartine se convirtió rápidamente en una de las principales figuras de los albores del Romanticismo francés. La obra, claramente influenciada por la poesía de François-René de Chateaubriand y por la intempestiva muerte de la pareja del autor, destacaba por su inclinación a la naturaleza, la soledad, el pesimismo, los escenarios melancólicos, las atmósferas luctuosas y los interrogantes metafísicos sobre la muerte. Además de otras tres colecciones de poesía lírica en línea con sus <em>Meditaciones</em>, Lamartine publicó también novelas, poemas épicos y numerosos volúmenes de historia.',
     trads: ['Meditaciones poéticas (selección)'],
     links: [
-      'http://editorial-alastor.blogspot.com/2011/02/lamartine-meditaciones-poeticas.html',
+      'https://editorial-alastor.blogspot.com/2011/02/lamartine-meditaciones-poeticas.html',
     ],
     rels: [4],
   },
@@ -267,7 +267,7 @@ const AuthorData = [
     life: '(Recanati, Italia, 1798 - Nápoles, Italia, 1837)',
     bio: 'Poeta, filósofo y filólogo que, junto a Ugo Foscolo y Alessandro Manzoni, se convirtió rápidamente en una de las principales figuras del Romanticismo italiano. Su obra poética, reunida en los volúmenes <em>Canciones</em>, <em>Versos</em> y <em>Cantos</em>, se caracteriza por su poderoso pesimismo, su desesperada angustia y sus amargos reproches al mundo, herederos de la tradición de la oscura poesía <em>disperata</em> del medioevo italiano y del petrarquismo luctuoso de poetas como Isabella di Morra. Leopardi vertió también sus ideas filosóficas sobre la desesperación y la tragedia propia de la vida en sus <em>Opúsculos morales</em>, obra en prosa que, bajo la forma de diálogos, pone de manifiesto su profunda angustia existencial frente a la ciega inmensidad del universo.',
     trads: ['Cantos (selección)'],
-    links: ['http://editorial-alastor.blogspot.com/2011/02/leopardi-cantos.html'],
+    links: ['https://editorial-alastor.blogspot.com/2011/02/leopardi-cantos.html'],
     rels: [4],
   },
   {
@@ -279,7 +279,7 @@ const AuthorData = [
     bio: 'Autor, con sus tan sublimes como satánicas y angustiantes <em>Flores del mal</em>, de una de las obras fundamentales en la evolución de la poesía moderna, Charles Baudelaire ha pasado a la historia como el arquetipo del «poeta maldito». De vida bohemia y disipada, en contradicción con la moral dominante en su tiempo, su trabajo, que abreva tanto de las fuentes más oscuras del Romanticismo como de las alucinadas obras de Edgar Allan Poe, sirvió de base para movimientos estéticos posrrománticos como el simbolismo y el decadentismo, además de haber participado en un incipiente parnasianismo y de ser mencionado entre las numerosas y dispares fuentes del surrealismo. También contribuyó notablemente, con <em>El spleen de París</em>, al establecimiento del poema en prosa como género.',
     trads: ['Las flores del mal (selección)'],
     links: [
-      'http://editorial-alastor.blogspot.com/2011/02/baudelaire-las-flores-del-mal.html',
+      'https://editorial-alastor.blogspot.com/2011/02/baudelaire-las-flores-del-mal.html',
     ],
     rels: [4],
   },
@@ -292,7 +292,7 @@ const AuthorData = [
     bio: 'Autor de poesías, obras de teatro y novelas de inclinación fuertemente melodramática, Alfred de Musset fue tal vez el principal exponente del sentimentalismo romántico francés. Lo más rico de su producción sin duda se centra en los escritos que siguieron a la ruptura de su turbulenta relación amorosa con la novelista George Sand, entre los que pueden contarse su novela <em>La confesión de un hijo del siglo</em> y las emblemáticas poesías reunidas bajo el título de <em>Las noches</em>, en las que toda la sensibilidad emocional del Romanticismo alcanza tal vez su mayor pico de exageración y patetismo. En su obra teatral, de factura bastante más formal, destacan los dramas <em>Lorenzaccio</em>, <em>Los caprichos de Mariana</em>, <em>No se juega con el amor</em> y <em>Fantasio</em>.',
     trads: ['Las noches (selección)'],
     links: [
-      'http://editorial-alastor.blogspot.com/2014/07/alfred-de-musset-las-noches.html',
+      'https://editorial-alastor.blogspot.com/2014/07/alfred-de-musset-las-noches.html',
     ],
     rels: [4],
   },
@@ -305,7 +305,7 @@ const AuthorData = [
     bio: 'Principal figura del parnasianismo, movimiento poético de temáticas generalmente neoclásicas que, influenciado por la doctrina de Théophile Gautier sobre «el arte por el arte» y las teorías estéticas de Arthur Schopenhauer, surgió como una reacción tanto contra el excesivo sentimentalismo del Romanticismo francés como contra el activismo político y social de las corrientes realista y naturalista. La parte más importante de la poesía de Lectonte de Lisle se centra en sus colecciones <em>Poemas antiguos</em>, <em>Poemas bárbaros</em> y <em>Poemas trágicos</em>, aunque su producción fue mucho más copiosa e incluyó hasta dramas y tragedias líricas hechas a imitación del teatro griego antiguo, como en el caso de <em>Las erinias</em>.',
     trads: ['Poemas bárbaros (selección)'],
     links: [
-      'http://editorial-alastor.blogspot.com/2016/08/c-m-leconte-de-lisle-el-frio-viento-de.html',
+      'https://editorial-alastor.blogspot.com/2016/08/c-m-leconte-de-lisle-el-frio-viento-de.html',
     ],
     rels: [4],
   },
@@ -318,12 +318,59 @@ const AuthorData = [
     bio: 'Tras una temprana incursión en los terrenos de la literatura realista, Rollinat abrazó sin ambages la refinada estética del decadentismo y no tardó en volverse un arquetípico exponente del ideal de «poeta maldito». Lo más importante de su producción poética, que solía recitar por las noches en un cabaret acompañándose con el piano, se reúne en su colección <em>Las neurosis</em>, en la que se evidencia la insoslayable influencia de los momentos más oscuros y macabros de los relatos de horror de Poe y del simbolismo de la poesía de Baudelaire. La obra se divide en diferentes secciones que llevan títulos como «Las almas», «Las lujurias», «Los espectros» y «Las tinieblas». Algunas de sus siguientes producciones fueron <em>El abismo</em>, <em>Las apariciones</em> y <em>Prosas de un solitario</em>, si bien ya no volvió a alcanzar la diabólica intensidad de aquella primera colección.',
     trads: ['Las neurosis (selección)'],
     links: [
-      'http://editorial-alastor.blogspot.com/2022/07/maurice-rollinat-las-neurosis.html',
+      'https://editorial-alastor.blogspot.com/2022/07/maurice-rollinat-las-neurosis.html',
     ],
     rels: [4],
   },
   /*{
     id: 24,
+    name: 'Thomas',
+    surname: 'Chatterton',
+    url: 'thomas-chatterton',
+    life: '(Bristol, Inglaterra, 1752 - Holborn, Inglaterra, 1770)',
+    bio: '',
+    trads: [''],
+    links: [''],
+    rels: [6],
+  },
+  {
+    id: 25,
+    name: 'Théodore Agrippa',
+    surname: 'd’Aubigné',
+    url: 'agrippa-daubigne',
+    life: '(Pons, Francia, 1552 - Ginebra, Suiza, 1630)',
+    bio: '',
+    trads: [''],
+    links: [''],
+    rels: [6],
+  },
+  {
+    id: 26,
+    name: 'John',
+    surname: 'Milton',
+    url: 'john-milton',
+    life: '(Londres, Inglaterra, 1608 - Londres, Inglaterra, 1674)',
+    bio: '',
+    trads: ['L’Allegro / Il Penseroso', 'El paraíso perdido (fragmentos)'],
+    links: [
+      'https://editorial-alastor.blogspot.com/2012/03/john-milton-lallegro-il-penseroso.html',
+      'https://editorial-alastor.blogspot.com/2012/03/john-milton-el-paraiso-perdido.html',
+    ],
+    rels: [6],
+  },
+  {
+    id: 27,
+    name: 'Francesco',
+    surname: 'Petrarca',
+    url: 'francesco-petrarca',
+    life: '(Arezzo, Italia, 1304 - Padua, Italia, 1374)',
+    bio: '',
+    trads: [''],
+    links: [''],
+    rels: [6],
+  },*/
+  /*{
+    id: 28,
     name: '',
     surname: '',
     url: '',
@@ -333,8 +380,7 @@ const AuthorData = [
     links: [''],
     rels: [4],
   },*/
-  /* sxix: life+bio x4;
-  reliques: milton (cambiar foto de Otros autores x Tennyson), d'aubigné y dos más (petrarca? birague? saint-amant? blair? chatterton? entradas blogspot: poesía de cementerio, neopetrarquismo francés, disperata); 
+  /* reliques entradas blogspot: elegía chatterton, 2sons petrarca, 2sons isabella, 2sons charlotte smith, 4exts disperata, 7sons neopetrarquismo francés, d'aubigné, soledad amant, 4exts poesía de cementerio (+ 2x milton);
   sxix2: hoffmann irving hawthorne gogol hearn lautreamont huysmans wilde; dunsany; howard; */
 ]
 

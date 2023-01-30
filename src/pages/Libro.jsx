@@ -37,6 +37,10 @@ function Libro() {
   } else {
     document.title = `Editorial Alastor | ${fullTitle(book)}`
     const related = books.filter((item) => book.rels.includes(item.id))
+    let isAvailable = false
+    if (book.mlibre !== '') {
+      isAvailable = true
+    }
 
     return (
       <main className='content'>
@@ -101,17 +105,15 @@ function Libro() {
               <span className='shade'>{book.isbn}</span>
               <br />
               <strong>Formato</strong> &nbsp;
-              <span className='shade'>
-                {book.pags > 0 && book.pags + ' p. | '}ebook
-              </span>
+              <span className='shade'>{isAvailable && book.pags + ' p. | '}ebook</span>
               <br />
               <strong>Precio</strong> &nbsp;
               <span className='shade'>
-                {book.pags > 0 && '$ ' + prices[book.price] + ' | '}$ {prices[0]}
+                {isAvailable && '$ ' + prices[book.price] + ' | '}$ {prices[0]}
               </span>
             </div>
             <div className='buy'>
-              {book.mlibre !== '' && (
+              {isAvailable && (
                 <a
                   className='btn'
                   href={book.mlibre}

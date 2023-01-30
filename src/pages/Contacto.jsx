@@ -140,7 +140,7 @@ function Contacto() {
           <br />
           <br />
           <a
-            href='http://editorial-alastor.blogspot.com/'
+            href='https://editorial-alastor.blogspot.com/'
             target='_blank'
             rel='noreferrer'
             title='Blogger'
@@ -148,7 +148,7 @@ function Contacto() {
             <FaBloggerB />
           </a>
           <a
-            href='http://perfil.mercadolibre.com.ar/edalastor'
+            href='https://perfil.mercadolibre.com.ar/edalastor'
             target='_blank'
             rel='noreferrer'
             title='MercadoLibre'

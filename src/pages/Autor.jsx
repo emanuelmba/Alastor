@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom'
 import { useContext, useEffect } from 'react'
+import { FaFeatherAlt } from 'react-icons/fa'
 import Content from '../data/Content'
 import Card from '../components/Card'
 import RelatedItem from '../components/RelatedItem'
@@ -48,6 +50,10 @@ function Autor() {
 
         <aside className='none'>
           <br />
+          <Link className='btn' to='/autores'>
+            &nbsp;&nbsp;
+            <FaFeatherAlt /> &nbsp;Lista de Autores &nbsp;&nbsp;
+          </Link>
         </aside>
 
         <article>

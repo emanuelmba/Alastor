@@ -109,8 +109,11 @@ aside {
   grid-row: 2 / span 2;
 }
 
-aside > .btn {
+aside > .btn, .buy {
   border: .01rem solid #8f8f8f;
+}
+
+aside > .btn {
   padding: .75rem 2rem;
 }
 
@@ -145,7 +148,6 @@ article > div:last-child {
 }
 
 .buy {
-  border: .01rem solid #8f8f8f;
   padding: .75rem 0;
 }
 
@@ -154,12 +156,12 @@ article > div:last-child {
 }
 
 .buy > .btn:nth-child(2) {
-  border-left:  .001rem solid #8f8f8f;
+  border-left:  .01rem solid #8f8f8f;
   border-radius: 0 .75rem .75rem 0;
 }
 
 h1 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 h2 {
@@ -216,9 +218,9 @@ section > .rel {
 }
 
 .msg {
-  width: 13rem;
+  width: 14rem;
   margin: auto;
-  font-weight: 600;
+  font-weight: bold;
 }
 .msg-warning {
   color: yellowgreen;

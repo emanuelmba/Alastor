@@ -17,9 +17,9 @@ function Catalogo() {
         <p className='e404'>ERROR 404</p>
         <img className='e404' src='../imgs/ea.png' alt='Editorial Alastor' />
         <h3>
-          La página o archivo buscados no existen o han cambiado de ubicación.
+          La página buscada no existe o ha cambiado de ubicación.
           <br />
-          Puede probar nuevamente consultando nuestro catálogo:
+          Puede probar nuevamente consultando nuestro catálogo.
         </h3>
       </div>
       {books.map((item) => (

@@ -187,9 +187,21 @@ figure img, .filler, .cardrel img {
 	color: #000;
 }
 
-.entry {
-	margin: 0 1em;
+.index p, .index .subindex {
+	margin: 0 .75rem;
 	font-style: italic;
+}
+
+.index span {
+  margin-left: -.75rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.index .subindex {
+  color: #444;
+  font-weight: normal;
+	margin: 0;
 }
 
 section {
@@ -229,7 +241,7 @@ section > .rel {
   color: firebrick
 }
 
-form {
+form, .error {
   border: .1rem solid #121921;
   border-radius: .75rem;
   padding: 1rem;
@@ -280,8 +292,7 @@ footer p {
 .error {
   width: 100%;
   text-align: center;
-  display: block;
-  padding: 1rem;
+  padding-bottom: 1.4rem;
 }
 
 .error .e404 {
@@ -371,6 +382,9 @@ a > img, .nav-btn {
   }
   .index {
     margin-bottom: -.5rem;
+  }
+  .index span {
+    margin: 0;
   }
   section {
     grid-column: 1 / span 1;

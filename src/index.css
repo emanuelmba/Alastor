@@ -65,7 +65,7 @@ main {
   justify-content: space-between;
 }
 
-main > div, figure, article, section, aside, .social > a {
+main > div, figure, section, aside, .social > a {
   margin: .75rem;
 }
 
@@ -107,6 +107,7 @@ figure {
 aside {
   grid-column: 1 / span 1;
   grid-row: 2 / span 2;
+  margin-top: 1.65rem;
 }
 
 aside > .btn, .buy {
@@ -127,17 +128,17 @@ aside p {
   width: 12rem;
 }
 
-article {
+section {
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
 }
 
-article > div {
-  margin-bottom: 1.5rem;;
+section > div {
+  margin-bottom: 1.5rem;
   font-size: .75rem;
 }
 
-article > div:last-child {
+section > div:last-child {
   margin-bottom: 0;
 }
 
@@ -190,6 +191,7 @@ figure img, .filler, .cardrel img {
 .index p, .index .subindex {
 	margin: 0 .75rem;
 	font-style: italic;
+  font-weight: normal;
 }
 
 .index span {
@@ -200,16 +202,20 @@ figure img, .filler, .cardrel img {
 
 .index .subindex {
   color: #444;
-  font-weight: normal;
 	margin: 0;
 }
 
-section {
+.related {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
 }
 
-section > .rel {
+.related > div {
+  margin-bottom: 0;
+  font-size: .8rem;
+}
+
+.related > .rel {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -348,6 +354,9 @@ a > img, .nav-btn {
   figure, aside {
     margin: .75rem 1rem;
   }
+  aside {
+    margin: 1.75rem 1rem .75rem;
+  }
   .filler {
     margin: 0 1rem;
   }
@@ -373,7 +382,7 @@ a > img, .nav-btn {
   .cover {
     margin: 0;
   }
-  article {
+  section {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
   }
@@ -386,11 +395,11 @@ a > img, .nav-btn {
   .index span {
     margin: 0;
   }
-  section {
+  .related {
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
   }
-  section > div {
+  .related > div {
     justify-content: space-evenly;
   }
   aside {
@@ -403,7 +412,6 @@ a > img, .nav-btn {
   }
   .howtobuy {
     width: auto;
-    margin-top: 2.5rem;
   }
   .none {
     display: none;
@@ -440,7 +448,7 @@ a > img, .nav-btn {
     padding-top: 136px;
   }
   aside > .btn {
-    margin: -.75rem 0 -1.75rem;
+    margin: -.75rem 0 -.75rem;
     display: block;
   }
 }

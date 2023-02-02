@@ -49,14 +49,13 @@ function Autor() {
         </Card>
 
         <aside className='none'>
-          <br />
           <Link className='btn' to='/autores'>
             &nbsp;&nbsp;
             <FaFeatherAlt /> &nbsp;Lista de Autores &nbsp;&nbsp;
           </Link>
         </aside>
 
-        <article>
+        <section>
           <div>
             <h1>{fullName(author)}</h1>
             <span className='shade'>{author.life}</span>
@@ -75,9 +74,9 @@ function Autor() {
               </p>
             ))}
           </div>
-        </article>
+        </section>
 
-        <section>
+        <section className='related'>
           <div>
             <strong>Libros del autor en Editorial Alastor:</strong>
           </div>

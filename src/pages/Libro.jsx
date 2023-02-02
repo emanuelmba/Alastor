@@ -54,7 +54,6 @@ function Libro() {
         </Card>
 
         <aside>
-          <br />
           <a
             className='btn'
             href={`/imgs/${book.url}.pdf`}
@@ -63,7 +62,6 @@ function Libro() {
           >
             <FaRegFilePdf /> &nbsp;Descargar muestra
           </a>
-          <br />
           <p className='howtobuy'>
             <b>CÓMO COMPRAR</b>
             <br />
@@ -86,7 +84,7 @@ function Libro() {
           </p>
         </aside>
 
-        <article>
+        <section>
           <div>
             <h2>{book.author}</h2>
             <h1>{book.title}</h1>
@@ -112,6 +110,7 @@ function Libro() {
                 {isAvailable && '$ ' + prices[book.price] + ' | '}$ {prices[0]}
               </span>
             </div>
+
             <div className='buy'>
               {isAvailable && (
                 <a
@@ -142,9 +141,9 @@ function Libro() {
             <strong>Contenidos</strong>
             <div className='index' dangerouslySetInnerHTML={{ __html: book.index }} />
           </div>
-        </article>
+        </section>
 
-        <section>
+        <section className='related'>
           <div>
             <strong>Otros títulos relacionados:</strong>
           </div>

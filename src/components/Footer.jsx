@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <footer>
-      <p>
+      <p className='tahoma'>
         &copy; {year} Editorial Alastor | <a href={`mailto:${mail}`}>{mail}</a>
       </p>
     </footer>

@@ -11,13 +11,11 @@ body {
     #020921 0%,
     #020921 143px,
     #000312 144px,
-    #000312 100%
-  );
+    #000312 100%);
   background-attachment: fixed;
   background-color: black;
   color: white;
   font-size: .8rem;
-  min-height: 100vh;
 }
 
 .site {
@@ -30,11 +28,55 @@ body {
   box-shadow: 0 .2rem 1.5rem black;
 }
 
+
+
+/* Common Utilities */
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: .8rem;
+  font-weight: lighter;
+}
+
+.fraktur {
+  font-family: 'UnifrakturMaguntia', serif;
+  font-size: 1.5rem;
+  padding: .06rem 1rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tahoma {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.vers {
+  font-size: .6rem;
+}
+
+.border {
+  border: .1rem solid #121921;
+  border-radius: .75rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.border-btn {
+  border: .01rem solid #8f8f8f;
+  border-radius: .75rem;
+}
+
+
+
+/* Header and Footer */
+
 header {
   height: 178px;
   width: 100%;
-  background-position: center;
-  background-size: cover;
+  background: center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,12 +94,15 @@ nav {
   background-color: rgba(0, 0, 0, .7);
 }
 
-.nav-btn, .con-btn {
-  padding: .06rem 1rem;
-  background-color: rgba(0, 0, 0, 0);
-  font-family: 'UnifrakturMaguntia', serif;
-  font-size: 1.5rem;
+footer p {
+  font-size: .55rem;
+  color: #686868;
+  padding: .25rem .5rem;
 }
+
+
+
+/* General Page Styles */
 
 main {
   padding: .75rem 1.75rem;
@@ -65,30 +110,23 @@ main {
   justify-content: space-between;
 }
 
-main > div, figure, section, aside, .social > a {
+main > div, figure, section, aside {
   margin: .75rem;
 }
 
-.cat {
+#catalogue, #authors {
   flex-wrap: wrap;
 }
 
-.aut, .con, .buy {
+#authors, #contact {
   justify-content: space-around;
-  padding: .75rem 0;
 }
 
-.aut img {
-  width: 13rem;
-  height: auto;
-}
+/* Books and Authors */
 
-.con, .btn, .index {
-  padding: .75rem;
-}
-
-.con, .cardrel {
-  text-align: center;
+#authors {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .content {
@@ -101,7 +139,7 @@ figure {
 }
 
 .cover {
- margin: 0 2.25rem 0 0;
+ margin-right: 2rem;
 }
 
 aside {
@@ -110,11 +148,7 @@ aside {
   margin-top: 1.65rem;
 }
 
-aside > .btn, .buy {
-  border: .01rem solid #8f8f8f;
-}
-
-aside > .btn {
+.btn-aside {
   padding: .75rem 2rem;
 }
 
@@ -148,42 +182,27 @@ section > div:last-child {
   align-items: flex-end;
 }
 
-.buy, .btn {
-  border-radius: .75rem;
+.buy {
+  padding: .75rem 0;
 }
 
-.buy > .btn:nth-child(2) {
+.buy a {
+  padding: .75rem;
+}
+
+.buy a:nth-child(2) {
   border-left:  .01rem solid #8f8f8f;
-  border-radius: 0 .75rem .75rem 0;
-}
-
-h1 {
-  font-size: 1.2rem;
-}
-
-h2 {
-  font-size: .8rem;
-  font-weight: lighter;
-}
-
-figure img, .filler, .cardrel img {
-  width: 12rem;
-  height: auto;
-  box-shadow: .15rem .15rem .1rem white;
-}
-
-.filler {
-  height: 0;
 }
 
 .index {
 	background-color: #fff0ed;
 	margin: .75rem 0;
+  padding: .75rem;
 	border-radius:.75rem;
 	color: #000;
 }
 
-.index p, .index .subindex, .filler {
+.index p, .index .subindex {
 	margin: 0 .75rem;
 	font-style: italic;
   font-weight: normal;
@@ -200,6 +219,8 @@ figure img, .filler, .cardrel img {
 	margin: 0;
 }
 
+/* Related */
+
 .related {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
@@ -210,7 +231,7 @@ figure img, .filler, .cardrel img {
   font-size: .8rem;
 }
 
-.related > .rel {
+.related .rel {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -219,15 +240,13 @@ figure img, .filler, .cardrel img {
 .cardrel {
   font-size: .65rem;
   max-width: 9rem;
+  text-align: center;
 }
 
-.cardrel img {
-  width: 6rem;
-  margin: 1.25rem 1.5rem .25rem;
-}
+/* Contact */
 
-.vers {
-  font-size: .6rem;
+#contact {
+  text-align: center;
 }
 
 .msg {
@@ -235,18 +254,13 @@ figure img, .filler, .cardrel img {
   margin: auto;
   font-weight: bold;
 }
+
 .msg-warning {
   color: yellowgreen;
 }
+
 .msg-error {
   color: firebrick
-}
-
-form, .error {
-  border: .1rem solid #121921;
-  border-radius: .75rem;
-  padding: 1rem;
-  margin: 1rem;
 }
 
 form > div > label {
@@ -263,12 +277,6 @@ input, textarea, select {
   vertical-align: middle;
 }
 
-.con-btn {
-  padding: .25rem .25rem .1rem;
-  width: 95%;
-  background-color: #121921;
-}
-
 select {
   width: 14.45rem;
 }
@@ -277,24 +285,18 @@ textarea {
   font-size: .85rem;
 }
 
-.social img {
-  width: 5rem;
-  margin: 0;
+.send-btn {
+  padding: .25rem .25rem .1rem;
+  width: 95%;
+  background-color: #121921;
 }
 
 .social > a {
   font-size: 1.5rem;
+  margin: .75rem;
 }
 
-footer p, .cardrel {
-  font-family: Tahoma, sans-serif;
-  font-weight: bold;}
-
-footer p {
-  font-size: .55rem;
-  color: #686868;
-  padding: .25rem .5rem;
-}
+/* Error404 */
 
 .error {
   width: 100%;
@@ -308,27 +310,57 @@ footer p {
   margin-bottom: 1rem;
 }
 
-a:link, a:visited, a:active, .nav-btn, .con-btn, .shade {
+
+
+/* Images Styles */
+
+figure img, .cardrel img, .filler {
+  width: 12rem;
+  height: auto;
+  box-shadow: .15rem .15rem .1rem white;
+}
+
+#authors img {
+  width: 13rem;
+  height: auto;
+}
+
+.cardrel img {
+  width: 6rem;
+  margin: 1.25rem 1.5rem .25rem;
+}
+
+.social img {
+  width: 5rem;
+  margin: 0;
+}
+
+.filler {
+  height: 0;
+}
+
+
+
+/* Links and Hovers */
+
+a:link, a:visited, a:active, .fraktur, .shade {
   text-decoration: none; 
   color: #8f8f8f;
 }
-a:hover, .nav-btn:hover, .con-btn:hover {
+a:hover, .fraktur:hover {
   color: white;
 }
-.aut img:hover {
+#authors img:hover {
   filter: drop-shadow(.003rem .003rem .1rem #fff0ed);
 }
-.con-btn:hover {
+.send-btn:hover {
   background-color: #161d24;
 }
 a:focus {
   outline: 0;
 }
-a > img, .nav-btn, .con-btn {
+a > img, .logo, .fraktur {
   border: 0;
-}
-
-.logo, .nav-btn, .con-btn {
   cursor: pointer;
 }
 .fade, .unfade:hover {
@@ -340,6 +372,10 @@ a > img, .nav-btn, .con-btn {
 .book:hover {
   filter: grayscale(100%);
 }
+
+
+
+/* Responsive Media Queries */
 
 @media screen and (max-width: 844px) {
   .specs {
@@ -368,13 +404,13 @@ a > img, .nav-btn, .con-btn {
   header, nav, main, .content {
     text-align: center;
   }
-  main, .aut, .con, .content {
+  main {
     padding-top: 190px;
   }
   .content {
     flex-direction: column;
   }
-  .cover {
+  .cover, .index span {
     margin: 0;
   }
   section {
@@ -384,24 +420,15 @@ a > img, .nav-btn, .con-btn {
   .specs {
     align-items: center;
   }
-  .index span {
-    margin: 0;
-  }
   .related {
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
-  }
-  .related > div {
-    justify-content: space-evenly;
   }
   aside {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
     padding: .75rem 0;
     margin-top: .5rem;
-  }
-  aside > .btn {
-    margin-left: 0;
   }
   .howtobuy {
     width: auto;
@@ -434,25 +461,25 @@ a > img, .nav-btn, .con-btn {
     display: flex;
     justify-content: space-evenly;
   }
-  .nav-btn {
+  .fraktur {
     font-size: 1.3rem;
   }
-  main, .aut, .con, .content {
+  main {
     padding-top: 136px;
   }
-  aside > .btn {
+  aside > a {
     margin: -.75rem 0;
     display: block;
   }
 }
 
 @media screen and (max-width: 342px) {
-  .buy > .btn {
+  .buy > a {
     display: block;
     justify-content: center;
     margin: -.75rem 0;
   }
-  .buy > .btn:nth-child(2) {
+  .buy > a:nth-child(2) {
     border-left:  0rem;
     border-top:  .01rem solid #8f8f8f;
     border-radius: 0 0 .75rem .75rem;

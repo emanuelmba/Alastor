@@ -12,7 +12,7 @@ function Catalogo() {
   document.title = 'Editorial Alastor'
 
   return (
-    <main className='cat'>
+    <main id='catalogue'>
       {books.map((item) => (
         <CatalogueItem key={item.id} item={item} />
       ))}

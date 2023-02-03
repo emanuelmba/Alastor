@@ -12,8 +12,8 @@ function Catalogo() {
   document.title = 'Editorial Alastor | Error 404'
 
   return (
-    <main className='cat'>
-      <div className='error social'>
+    <main id='catalogue'>
+      <div className='error social border'>
         <p className='e404'>ERROR 404</p>
         <img className='e404' src='../imgs/ea.png' alt='Editorial Alastor' />
         <h3>

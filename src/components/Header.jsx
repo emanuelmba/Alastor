@@ -16,13 +16,13 @@ function Header() {
       </Link>
       <nav>
         <Link to='/catalogo'>
-          <button className='nav-btn'>Catálogo</button>
+          <button className='fraktur'>Catálogo</button>
         </Link>
         <Link to='/autores'>
-          <button className='nav-btn'>Autores</button>
+          <button className='fraktur'>Autores</button>
         </Link>
         <Link to='/contacto'>
-          <button className='nav-btn'>Contacto</button>
+          <button className='fraktur'>Contacto</button>
         </Link>
       </nav>
     </header>

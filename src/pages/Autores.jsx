@@ -14,7 +14,7 @@ function Autores() {
   document.title = 'Editorial Alastor | Autores'
 
   return (
-    <main className='cat aut'>
+    <main id='authors'>
       {authors.map((item) => (
         <AuthorsItem key={item.id} item={item} />
       ))}

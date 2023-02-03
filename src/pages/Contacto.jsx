@@ -72,11 +72,11 @@ function Contacto() {
   document.title = 'Editorial Alastor | Contacto'
 
   return (
-    <main className='con'>
+    <main id='contact'>
       <div>
         <div className={'msg msg-' + color}>{msg}</div>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='border'>
           <div>
             <label>Nombre</label>
             <input
@@ -125,7 +125,7 @@ function Contacto() {
           </div>
           <div>
             <br />
-            <button className='con-btn' type='submit'>
+            <button className='send-btn fraktur' type='submit'>
               Enviar
             </button>
           </div>

@@ -49,7 +49,7 @@ function Autor() {
         </Card>
 
         <aside className='none'>
-          <Link className='btn' to='/autores'>
+          <Link className='btn-aside border-btn' to='/autores'>
             &nbsp;&nbsp;
             <FaFeatherAlt /> &nbsp;Lista de Autores &nbsp;&nbsp;
           </Link>

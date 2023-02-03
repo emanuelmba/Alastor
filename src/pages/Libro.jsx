@@ -55,7 +55,7 @@ function Libro() {
 
         <aside>
           <a
-            className='btn'
+            className='btn-aside border-btn'
             href={`/imgs/${book.url}.pdf`}
             target='_blank'
             rel='noreferrer'
@@ -111,10 +111,9 @@ function Libro() {
               </span>
             </div>
 
-            <div className='buy'>
+            <div className='buy border-btn'>
               {isAvailable && (
                 <a
-                  className='btn'
                   href={book.mlibre}
                   target='_blank'
                   rel='noreferrer'
@@ -124,13 +123,12 @@ function Libro() {
                 </a>
               )}
               <a
-                className='btn'
                 href={mpago}
                 target='_blank'
                 rel='noreferrer'
                 title={'MercadoPago: $ ' + prices[0]}
               >
-                <FaTabletAlt /> &nbsp;Comprar ebook
+                <FaTabletAlt /> &nbsp;Comprar epub
               </a>
             </div>
           </div>

@@ -125,7 +125,7 @@ function Contacto() {
           </div>
           <div>
             <br />
-            <button className='nav-btn' type='submit'>
+            <button className='con-btn' type='submit'>
               Enviar
             </button>
           </div>

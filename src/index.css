@@ -52,8 +52,8 @@ nav {
   background-color: rgba(0, 0, 0, .7);
 }
 
-.nav-btn {
-  margin: 0 .75rem;
+.nav-btn, .con-btn {
+  padding: .06rem 1rem;
   background-color: rgba(0, 0, 0, 0);
   font-family: 'UnifrakturMaguntia', serif;
   font-size: 1.5rem;
@@ -73,7 +73,7 @@ main > div, figure, section, aside, .social > a {
   flex-wrap: wrap;
 }
 
-.aut, .con {
+.aut, .con, .buy {
   justify-content: space-around;
   padding: .75rem 0;
 }
@@ -148,10 +148,6 @@ section > div:last-child {
   align-items: flex-end;
 }
 
-.buy {
-  padding: .75rem 0;
-}
-
 .buy, .btn {
   border-radius: .75rem;
 }
@@ -178,7 +174,6 @@ figure img, .filler, .cardrel img {
 
 .filler {
   height: 0;
-  margin: 0 .75rem;
 }
 
 .index {
@@ -188,7 +183,7 @@ figure img, .filler, .cardrel img {
 	color: #000;
 }
 
-.index p, .index .subindex {
+.index p, .index .subindex, .filler {
 	margin: 0 .75rem;
 	font-style: italic;
   font-weight: normal;
@@ -268,6 +263,12 @@ input, textarea, select {
   vertical-align: middle;
 }
 
+.con-btn {
+  padding: .25rem;
+  width: 95%;
+  background-color: #121921;
+}
+
 select {
   width: 14.45rem;
 }
@@ -307,24 +308,27 @@ footer p {
   margin-bottom: 1rem;
 }
 
-a:link, a:visited, a:active, .nav-btn, .shade {
+a:link, a:visited, a:active, .nav-btn, .con-btn, .shade {
   text-decoration: none; 
   color: #8f8f8f;
 }
-a:hover, .nav-btn:hover {
+a:hover, .nav-btn:hover, .con-btn:hover {
   color: white;
 }
 .aut img:hover {
   filter: drop-shadow(.003rem .003rem .1rem #fff0ed);
 }
+.con-btn:hover {
+  background-color: #161d24;
+}
 a:focus {
   outline: 0;
 }
-a > img, .nav-btn {
+a > img, .nav-btn, .con-btn {
   border: 0;
 }
 
-.logo, .nav-btn {
+.logo, .nav-btn, .con-btn {
   cursor: pointer;
 }
 .fade, .unfade:hover {
@@ -347,7 +351,7 @@ a > img, .nav-btn {
   }
 }
 
-@media screen and (max-width: 714px) {
+@media screen and (max-width: 724px) {
   main {
     justify-content: space-evenly;
   }
@@ -408,8 +412,9 @@ a > img, .nav-btn {
     display: none;
   }
   form > div > label {
+    display: block;
     text-align: center;
-    margin-top: .5rem;
+    margin: .5rem auto 0;
   }
   form > div:first-child > label {
     margin-top: 0;

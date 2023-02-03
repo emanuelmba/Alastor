@@ -347,22 +347,13 @@ a > img, .nav-btn {
   }
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 714px) {
   main {
     justify-content: space-evenly;
   }
-  figure, aside {
-    margin: .75rem 1rem;
-  }
-  aside {
-    margin: 1.75rem 1rem .75rem;
-  }
-  .filler {
-    margin: 0 1rem;
-  }
 }
 
-@media screen and (max-width: 582px) {
+@media screen and (max-width: 602px) {
   header {
     position: fixed;
     z-index: 1;
@@ -429,7 +420,7 @@ a > img, .nav-btn {
   }
 }
 
-@media screen and (max-width: 372px) {
+@media screen and (max-width: 402px) {
   header {
     height: 124px;
   }
@@ -453,7 +444,7 @@ a > img, .nav-btn {
   }
 }
 
-@media screen and (max-width: 322px) {
+@media screen and (max-width: 342px) {
   .buy > .btn {
     display: block;
     justify-content: center;

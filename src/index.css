@@ -11,7 +11,8 @@ body {
     #020921 0%,
     #020921 143px,
     #000312 144px,
-    #000312 100%);
+    #000312 100%
+  );
   background-attachment: fixed;
   background-color: black;
   color: white;
@@ -110,7 +111,7 @@ main {
   justify-content: space-between;
 }
 
-main > div, figure, section, aside {
+main > * {
   margin: .75rem;
 }
 
@@ -127,6 +128,10 @@ main > div, figure, section, aside {
 #authors {
   padding-left: 0;
   padding-right: 0;
+}
+
+#authors > * {
+  margin: 0;
 }
 
 .content {
@@ -182,15 +187,15 @@ section > div:last-child {
   align-items: flex-end;
 }
 
-.buy {
+.btn-buy {
   padding: .75rem 0;
 }
 
-.buy a {
+.btn-buy a {
   padding: .75rem;
 }
 
-.buy a:nth-child(2) {
+.btn-buy a:nth-child(2) {
   border-left:  .01rem solid #8f8f8f;
 }
 
@@ -202,7 +207,7 @@ section > div:last-child {
 	color: #000;
 }
 
-.index p, .index .subindex {
+.index p, .index .gray {
 	margin: 0 .75rem;
 	font-style: italic;
   font-weight: normal;
@@ -214,7 +219,7 @@ section > div:last-child {
   font-weight: bold;
 }
 
-.index .subindex {
+.index .gray {
   color: #444;
 	margin: 0;
 }
@@ -285,7 +290,7 @@ textarea {
   font-size: .85rem;
 }
 
-.send-btn {
+.btn-send {
   padding: .25rem .25rem .1rem;
   width: 95%;
   background-color: #121921;
@@ -337,6 +342,7 @@ figure img, .cardrel img, .filler {
 
 .filler {
   height: 0;
+  margin: 0 .75rem;
 }
 
 
@@ -350,18 +356,18 @@ a:link, a:visited, a:active, .fraktur, .shade {
 a:hover, .fraktur:hover {
   color: white;
 }
-#authors img:hover {
-  filter: drop-shadow(.003rem .003rem .1rem #fff0ed);
-}
-.send-btn:hover {
-  background-color: #161d24;
-}
-a:focus {
-  outline: 0;
-}
 a > img, .logo, .fraktur {
   border: 0;
   cursor: pointer;
+}
+*:focus {
+  outline: 0;
+}
+#authors img:hover {
+  filter: drop-shadow(.003rem .003rem .1rem #fff0ed);
+}
+.btn-send:hover {
+  background-color: #161d24;
 }
 .fade, .unfade:hover {
   opacity: 1;
@@ -382,7 +388,7 @@ a > img, .logo, .fraktur {
     flex-flow: column;
     align-items: flex-start;
   }
-  .buy {
+  .btn-buy {
     margin-top: 1.25rem;
   }
 }
@@ -474,12 +480,12 @@ a > img, .logo, .fraktur {
 }
 
 @media screen and (max-width: 342px) {
-  .buy > a {
+  .btn-buy > a {
     display: block;
     justify-content: center;
     margin: -.75rem 0;
   }
-  .buy > a:nth-child(2) {
+  .btn-buy > a:nth-child(2) {
     border-left:  0rem;
     border-top:  .01rem solid #8f8f8f;
     border-radius: 0 0 .75rem .75rem;

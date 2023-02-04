@@ -111,7 +111,7 @@ function Libro() {
               </span>
             </div>
 
-            <div className='buy border-btn'>
+            <div className='btn-buy border-btn'>
               {isAvailable && (
                 <a
                   href={book.mlibre}

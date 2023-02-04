@@ -125,7 +125,7 @@ function Contacto() {
           </div>
           <div>
             <br />
-            <button className='send-btn fraktur' type='submit'>
+            <button className='btn-send fraktur' type='submit'>
               Enviar
             </button>
           </div>

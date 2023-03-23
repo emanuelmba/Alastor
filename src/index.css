@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
   background-color: black;
   color: white;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .site {
@@ -26,10 +26,8 @@ body {
 
 .container {
   background-color: #000312;
-  box-shadow: 0 .2rem 1.5rem black;
+  box-shadow: 0 0.2rem 1.5rem black;
 }
-
-
 
 /* Common Utilities */
 
@@ -38,14 +36,14 @@ h1 {
 }
 
 h2 {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: lighter;
 }
 
 .fraktur {
   font-family: 'UnifrakturMaguntia', serif;
   font-size: 1.5rem;
-  padding: .06rem 1rem;
+  padding: 0.06rem 1rem;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -55,29 +53,27 @@ h2 {
 }
 
 .vers {
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
 
 .border {
-  border: .1rem solid #121921;
-  border-radius: .75rem;
+  border: 0.1rem solid #121921;
+  border-radius: 0.75rem;
   padding: 1rem;
   margin: 1rem;
 }
 
 .border-btn {
-  border: .01rem solid #8f8f8f;
-  border-radius: .75rem;
+  border: 0.01rem solid #8f8f8f;
+  border-radius: 0.75rem;
 }
-
-
 
 /* Header and Footer */
 
 header {
   height: 178px;
   width: 100%;
-  background: center center/cover;
+  background: no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,40 +82,40 @@ header {
 .logo {
   width: 19.5rem;
   height: auto;
-  margin: .4rem 1rem;
+  margin: 0.4rem 1rem;
 }
 
 nav {
-  padding: .25rem 1rem .1rem;
+  padding: 0.25rem 1rem 0.1rem;
   text-align: right;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 footer p {
-  font-size: .55rem;
+  font-size: 0.55rem;
   color: #686868;
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
 }
-
-
 
 /* General Page Styles */
 
 main {
-  padding: .75rem 1.75rem;
+  padding: 0.75rem 1.75rem;
   display: flex;
   justify-content: space-between;
 }
 
 main > * {
-  margin: .75rem;
+  margin: 0.75rem;
 }
 
-#catalogue, #authors {
+#catalogue,
+#authors {
   flex-wrap: wrap;
 }
 
-#authors, #contact {
+#authors,
+#contact {
   justify-content: space-around;
 }
 
@@ -144,7 +140,7 @@ figure {
 }
 
 .cover {
- margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 aside {
@@ -154,16 +150,16 @@ aside {
 }
 
 .btn-aside {
-  padding: .75rem 2rem;
+  padding: 0.75rem 2rem;
 }
 
 aside p {
-  font-size: .65rem;
+  font-size: 0.65rem;
   color: #686868;
 }
 
 .howtobuy {
-  margin: 2.4rem .2rem 0;
+  margin: 2.4rem 0.2rem 0;
   width: 12rem;
 }
 
@@ -174,7 +170,7 @@ section {
 
 section > div {
   margin-bottom: 1.5rem;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 section > div:last-child {
@@ -188,40 +184,41 @@ section > div:last-child {
 }
 
 .btn-buy {
-  padding: .75rem 0;
+  padding: 0.75rem 0;
 }
 
 .btn-buy a {
-  padding: .75rem;
+  padding: 0.75rem;
 }
 
 .btn-buy a:nth-child(2) {
-  border-left:  .01rem solid #8f8f8f;
+  border-left: 0.01rem solid #8f8f8f;
 }
 
 .index {
-	background-color: #fff0ed;
-	margin: .75rem 0;
-  padding: .75rem;
-	border-radius:.75rem;
-	color: #000;
+  background-color: #fff0ed;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  color: #000;
 }
 
-.index p, .index .gray {
-	margin: 0 .75rem;
-	font-style: italic;
+.index p,
+.index span.gray {
+  margin: 0 0.75rem;
+  font-style: italic;
   font-weight: normal;
 }
 
 .index span {
-  margin-left: -.75rem;
+  margin-left: -0.75rem;
   font-style: normal;
   font-weight: bold;
 }
 
-.index .gray {
+.index span.gray {
   color: #444;
-	margin: 0;
+  margin: 0;
 }
 
 /* Related */
@@ -233,7 +230,7 @@ section > div:last-child {
 
 .related > div {
   margin-bottom: 0;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .related .rel {
@@ -243,7 +240,7 @@ section > div:last-child {
 }
 
 .cardrel {
-  font-size: .65rem;
+  font-size: 0.65rem;
   max-width: 9rem;
   text-align: center;
 }
@@ -265,7 +262,7 @@ section > div:last-child {
 }
 
 .msg-error {
-  color: firebrick
+  color: firebrick;
 }
 
 form > div > label {
@@ -275,9 +272,11 @@ form > div > label {
   display: inline-block;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   width: 14rem;
-  margin: .3rem .5rem;
+  margin: 0.3rem 0.5rem;
   border-radius: 0;
   vertical-align: middle;
 }
@@ -287,18 +286,18 @@ select {
 }
 
 textarea {
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .btn-send {
-  padding: .25rem .25rem .1rem;
+  padding: 0.25rem 0.25rem 0.1rem;
   width: 95%;
   background-color: #121921;
 }
 
 .social > a {
   font-size: 1.5rem;
-  margin: .75rem;
+  margin: 0.75rem;
 }
 
 /* Error404 */
@@ -315,14 +314,14 @@ textarea {
   margin-bottom: 1rem;
 }
 
-
-
 /* Images Styles */
 
-figure img, .cardrel img, .filler {
+figure img,
+.cardrel img,
+.filler {
   width: 12rem;
   height: auto;
-  box-shadow: .15rem .15rem .1rem white;
+  box-shadow: 0.15rem 0.15rem 0.1rem white;
 }
 
 #authors img {
@@ -332,7 +331,7 @@ figure img, .cardrel img, .filler {
 
 .cardrel img {
   width: 6rem;
-  margin: 1.25rem 1.5rem .25rem;
+  margin: 1.25rem 1.5rem 0.25rem;
 }
 
 .social img {
@@ -342,21 +341,24 @@ figure img, .cardrel img, .filler {
 
 .filler {
   height: 0;
-  margin: 0 .75rem;
+  margin: 0 0.75rem;
 }
-
-
 
 /* Links and Hovers */
 
-a:link, a:visited, a:active, .fraktur, .shade {
-  text-decoration: none; 
+a,
+.fraktur,
+.shade {
+  text-decoration: none;
   color: #8f8f8f;
 }
-a:hover, .fraktur:hover {
+a:hover,
+.fraktur:hover {
   color: white;
 }
-a > img, .logo, .fraktur {
+a > img,
+.logo,
+.fraktur {
   border: 0;
   cursor: pointer;
 }
@@ -364,22 +366,22 @@ a > img, .logo, .fraktur {
   outline: 0;
 }
 #authors img:hover {
-  filter: drop-shadow(.003rem .003rem .1rem #fff0ed);
+  filter: drop-shadow(0.003rem 0.003rem 0.1rem #fff0ed);
 }
 .btn-send:hover {
   background-color: #161d24;
 }
-.fade, .unfade:hover {
+.fade,
+.unfade:hover {
   opacity: 1;
 }
-.fade:hover, .unfade {
-  opacity: .6;
+.fade:hover,
+.unfade {
+  opacity: 0.6;
 }
 .book:hover {
   filter: grayscale(100%);
 }
-
-
 
 /* Responsive Media Queries */
 
@@ -407,7 +409,10 @@ a > img, .logo, .fraktur {
   .logo {
     margin-left: 1.15rem;
   }
-  header, nav, main, .content {
+  header,
+  nav,
+  main,
+  .content {
     text-align: center;
   }
   main {
@@ -416,7 +421,8 @@ a > img, .logo, .fraktur {
   .content {
     flex-direction: column;
   }
-  .cover, .index span {
+  .cover,
+  .index span {
     margin: 0;
   }
   section {
@@ -433,8 +439,8 @@ a > img, .logo, .fraktur {
   aside {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-    padding: .75rem 0;
-    margin-top: .5rem;
+    padding: 0.75rem 0;
+    margin-top: 0.5rem;
   }
   .howtobuy {
     width: auto;
@@ -445,7 +451,7 @@ a > img, .logo, .fraktur {
   form > div > label {
     display: block;
     text-align: center;
-    margin: .5rem auto 0;
+    margin: 0.5rem auto 0;
   }
   form > div:first-child > label {
     margin-top: 0;
@@ -463,7 +469,7 @@ a > img, .logo, .fraktur {
     width: 80%;
   }
   nav {
-    padding: .25rem .25rem .1rem;
+    padding: 0.25rem 0.25rem 0.1rem;
     display: flex;
     justify-content: space-evenly;
   }
@@ -474,7 +480,7 @@ a > img, .logo, .fraktur {
     padding-top: 136px;
   }
   aside > a {
-    margin: -.75rem 0;
+    margin: -0.75rem 0;
     display: block;
   }
 }
@@ -483,12 +489,12 @@ a > img, .logo, .fraktur {
   .btn-buy > a {
     display: block;
     justify-content: center;
-    margin: -.75rem 0;
+    margin: -0.75rem 0;
   }
   .btn-buy > a:nth-child(2) {
-    border-left:  0rem;
-    border-top:  .01rem solid #8f8f8f;
-    border-radius: 0 0 .75rem .75rem;
-    margin: .75rem 0 -.75rem;
+    border-left: 0rem;
+    border-top: 0.01rem solid #8f8f8f;
+    border-radius: 0 0 0.75rem 0.75rem;
+    margin: 0.75rem 0 -0.75rem;
   }
 }

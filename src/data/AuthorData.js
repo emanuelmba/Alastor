@@ -252,7 +252,7 @@ const AuthorData = [
     surname: 'Lamartine',
     url: 'alphonse-lamartine',
     life: '(Mâcon, Francia, 1790 - París, Francia, 1869)',
-    bio: 'Merced a la publicación em 1820 de su influyente colección de poemas <em>Meditaciones poéticas</em>, el político francés Alphonse de Lamartine se convirtió rápidamente en una de las principales figuras de los albores del Romanticismo francés. La obra, claramente influenciada por la poesía de François-René de Chateaubriand y por la intempestiva muerte de la pareja del autor, destacaba por su inclinación a la naturaleza, la soledad, el pesimismo, los escenarios melancólicos, las atmósferas luctuosas y los interrogantes metafísicos sobre la muerte. Además de otras tres colecciones de poesía lírica en línea con sus <em>Meditaciones</em>, Lamartine publicó también novelas, poemas épicos y numerosos volúmenes de historia.',
+    bio: 'Merced a la publicación en 1820 de su influyente colección de poemas <em>Meditaciones poéticas</em>, el político francés Alphonse de Lamartine se convirtió rápidamente en una de las principales figuras de los albores del Romanticismo francés. La obra, claramente influenciada por la poesía de François-René de Chateaubriand y por la intempestiva muerte de la pareja del autor, destacaba por su inclinación a la naturaleza, la soledad, el pesimismo, los escenarios melancólicos, las atmósferas luctuosas y los interrogantes metafísicos sobre la muerte. Además de otras tres colecciones de poesía lírica en línea con sus <em>Meditaciones</em>, Lamartine publicó también novelas, poemas épicos y numerosos volúmenes de historia.',
     trads: ['Meditaciones poéticas (selección)'],
     links: [
       'https://editorial-alastor.blogspot.com/2011/02/lamartine-meditaciones-poeticas.html',

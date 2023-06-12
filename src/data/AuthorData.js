@@ -380,7 +380,7 @@ const AuthorData = [
     links: [''],
     rels: [4],
   },*/
-  /* reliques entradas blogspot: elegía chatterton, 2sons petrarca, 2sons isabella, 2sons charlotte smith, 4exts disperata, 7sons neopetrarquismo francés, d'aubigné, soledad amant, 4exts poesía de cementerio (+ 2x milton);
+  /* reliques entradas blogspot: elegía chatterton, 2sons petrarca, 2sons isabella, 2sons charlotte smith, 4exts disperata, 10sons neopetrarquismo francés, d'aubigné, soledad amant, 4exts poesía de cementerio (+ 2x milton);
   sxix2: hoffmann irving hawthorne gogol hearn lautreamont huysmans wilde; dunsany; howard; */
 ]
 

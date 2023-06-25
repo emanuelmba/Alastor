@@ -8,7 +8,7 @@ function RelatedItem({ item }) {
 
   return (
     <CardRel>
-      <Link onClick={() => setBook(item)} to={`/catalogo/${item.url}`}>
+      <Link onClick={() => setBook(item)} to={`/catalogo/${item.code}${item.url}`}>
         <img
           className='book'
           src={`../imgs/ea${item.code}.jpg`}

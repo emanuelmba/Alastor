@@ -8,7 +8,7 @@ function CatalogueItem({ item }) {
 
   return (
     <Card>
-      <Link onClick={() => setBook(item)} to={`/catalogo/${item.url}`}>
+      <Link onClick={() => setBook(item)} to={`/catalogo/${item.code}${item.url}`}>
         <img
           className='book'
           src={`../imgs/ea${item.code}.jpg`}

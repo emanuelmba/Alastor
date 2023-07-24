@@ -35,7 +35,7 @@ const AuthorData = [
       'https://editorial-alastor.blogspot.com/2016/05/p-b-shelley-oda-al-viento-oeste.html',
       'https://editorial-alastor.blogspot.com/2016/08/p-b-shelley-una-alondra.html',
       'https://editorial-alastor.blogspot.com/2016/05/p-b-shelley-adonais.html',
-      'https://editorial-alastor.blogspot.com/2011/02/shelley-ozymandias.html',
+      'https://editorial-alastor.blogspot.com/2011/02/shelley-ozymandias-espanol.html',
     ],
     rels: [3, 4],
   },
@@ -228,7 +228,7 @@ const AuthorData = [
     bio: 'Mediante su participación en el movimiento estético <em>Sturm und Drang</em>, que lo asoció al poeta Friedrich Schiller, Goethe fue uno de los principales precursores del Romanticismo alemán, al cual acaso dio inicio formal con la publicación de su influyente novela epistolar <em>Werther</em>. Figura cimera de las letras occidentales de todos los tiempos, Goethe cultivó la poesía lírica, la balada, la novela, el ensayo científico y el drama, destacándose con solidez en todos los campos por igual. Algunas de sus obras más reconocidas son <em>El rey de los elfos</em>, <em>El pescador</em>, <em>La novia de Corinto</em>, <em>Wilhelm Meister</em>, <em>Egmont</em>, <em>Diván de Oriente y Occidente</em>, <em>Las afinidades electivas</em> y, sobre todo, las dos partes de su inmortal clásico <em>Fausto</em>.',
     trads: ['El rey de los elfos', 'Soledad'],
     links: [
-      'https://editorial-alastor.blogspot.com/2014/07/goethe-el-rey-de-los-elfos-der-erlkonig.html',
+      'https://editorial-alastor.blogspot.com/2014/07/goethe-rey-de-los-elfos-der-erlkonig.html',
       'https://editorial-alastor.blogspot.com/2016/08/johann-wolfgang-von-goethe-soledad.html',
     ],
     rels: [4],
@@ -305,7 +305,7 @@ const AuthorData = [
     bio: 'Principal figura del parnasianismo, movimiento poético de temáticas generalmente neoclásicas que, influenciado por la doctrina de Théophile Gautier sobre «el arte por el arte» y las teorías estéticas de Arthur Schopenhauer, surgió como una reacción tanto contra el excesivo sentimentalismo del Romanticismo francés como contra el activismo político y social de las corrientes realista y naturalista. La parte más importante de la poesía de Lectonte de Lisle se centra en sus colecciones <em>Poemas antiguos</em>, <em>Poemas bárbaros</em> y <em>Poemas trágicos</em>, aunque su producción fue mucho más copiosa e incluyó hasta dramas y tragedias líricas hechas a imitación del teatro griego antiguo, como en el caso de <em>Las erinias</em>.',
     trads: ['Poemas bárbaros (selección)'],
     links: [
-      'https://editorial-alastor.blogspot.com/2016/08/c-m-leconte-de-lisle-el-frio-viento-de.html',
+      'https://editorial-alastor.blogspot.com/2016/08/leconte-de-lisle-poemas-barbaros.html',
     ],
     rels: [4],
   },
@@ -318,7 +318,7 @@ const AuthorData = [
     bio: 'Tras una temprana incursión en los terrenos de la literatura realista, Rollinat abrazó sin ambages la refinada estética del decadentismo y no tardó en volverse un arquetípico exponente del ideal de «poeta maldito». Lo más importante de su producción poética, que solía recitar por las noches en un cabaret acompañándose con el piano, se reúne en su colección <em>Las neurosis</em>, en la que se evidencia la insoslayable influencia de los momentos más oscuros y macabros de los relatos de horror de Poe y del simbolismo de la poesía de Baudelaire. La obra se divide en diferentes secciones que llevan títulos como «Las almas», «Las lujurias», «Los espectros» y «Las tinieblas». Algunas de sus siguientes producciones fueron <em>El abismo</em>, <em>Las apariciones</em> y <em>Prosas de un solitario</em>, si bien ya no volvió a alcanzar la diabólica intensidad de aquella primera colección.',
     trads: ['Las neurosis (selección)'],
     links: [
-      'https://editorial-alastor.blogspot.com/2022/07/maurice-rollinat-las-neurosis.html',
+      'https://editorial-alastor.blogspot.com/2022/07/maurice-rollinat-las-neurosis-nevroses.html',
     ],
     rels: [4],
   },
@@ -380,8 +380,8 @@ const AuthorData = [
     links: [''],
     rels: [4],
   },*/
-  /* reliques entradas blogspot: elegía chatterton, 2sons petrarca, 2sons isabella, 2sons charlotte smith, 4exts disperata, 10sons neopetrarquismo francés, d'aubigné, soledad amant, 4exts poesía de cementerio (+ 2x milton);
-  sxix2: hoffmann irving hawthorne gogol hearn lautreamont huysmans wilde; dunsany; howard; */
+  /* reliques entradas blogspot: sidebar + ed impresa, 2exts disperata, d'aubigné estancia i, saint-amant soledad, 4exts poesía de cementerio;
+  sxix2: gogol lautreamont huysmans wilde; maupassant irving (hoffmann hawthorne; hearn gautier) dunsany howard; */
 ]
 
 export default AuthorData

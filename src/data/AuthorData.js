@@ -381,7 +381,7 @@ const AuthorData = [
     rels: [4],
   },*/
   /* reliques entradas blogspot: sidebar + ed impresa, 2exts disperata, d'aubigné estancia i, saint-amant soledad, 4exts poesía de cementerio;
-  sxix2: gogol lautreamont huysmans wilde; maupassant irving (hoffmann hawthorne; hearn gautier) dunsany howard; */
+  sxix2: gogol lautreamont huysmans wilde; maupassant irving (hoffmann hawthorne; hearn bécquer) dunsany howard; */
 ]
 
 export default AuthorData

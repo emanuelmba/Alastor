@@ -315,7 +315,7 @@ const AuthorData = [
     surname: 'Rollinat',
     url: 'maurice-rollinat',
     life: '(Indre, Francia, 1846 - París, Francia, 1903)',
-    bio: 'Tras una temprana incursión en los terrenos de la literatura realista, Rollinat abrazó sin ambages la refinada estética del decadentismo y no tardó en volverse un arquetípico exponente del ideal de «poeta maldito». Lo más importante de su producción poética, que solía recitar por las noches en un cabaret acompañándose con el piano, se reúne en su colección <em>Las neurosis</em>, en la que se evidencia la insoslayable influencia de los momentos más oscuros y macabros de los relatos de horror de Poe y del simbolismo de la poesía de Baudelaire. La obra se divide en diferentes secciones que llevan títulos como «Las almas», «Las lujurias», «Los espectros» y «Las tinieblas». Algunas de sus siguientes producciones fueron <em>El abismo</em>, <em>Las apariciones</em> y <em>Prosas de un solitario</em>, si bien ya no volvió a alcanzar la diabólica intensidad de aquella primera colección.',
+    bio: 'Tras una temprana incursión en los terrenos de la literatura realista, Rollinat abrazó sin ambages la refinada estética del decadentismo y no tardó en volverse un arquetípico exponente del ideal de «poeta maldito». Lo más importante de su producción poética, que solía recitar por las noches en un cabaret acompañándose con un piano, se reúne en su colección <em>Las neurosis</em>, en la que se evidencia la insoslayable influencia de los momentos más oscuros y macabros de los relatos de horror de Poe y del simbolismo de la poesía de Baudelaire. La obra se divide en diferentes secciones que llevan títulos como «Las almas», «Las lujurias», «Los espectros» y «Las tinieblas». Algunas de sus siguientes producciones fueron <em>El abismo</em>, <em>Las apariciones</em> y <em>Prosas de un solitario</em>, si bien ya no volvió a alcanzar la diabólica intensidad de aquella primera colección.',
     trads: ['Las neurosis (selección)'],
     links: [
       'https://editorial-alastor.blogspot.com/2022/07/maurice-rollinat-las-neurosis-nevroses.html',
@@ -329,8 +329,8 @@ const AuthorData = [
     url: 'thomas-chatterton',
     life: '(Bristol, Inglaterra, 1752 - Holborn, Inglaterra, 1770)',
     bio: '',
-    trads: [''],
-    links: [''],
+    trads: ['Elegía'],
+    links: ['https://editorial-alastor.blogspot.com/2023/07/thomas-chatterton-elegia.html'],
     rels: [6],
   },
   {
@@ -340,8 +340,8 @@ const AuthorData = [
     url: 'agrippa-daubigne',
     life: '(Pons, Francia, 1552 - Ginebra, Suiza, 1630)',
     bio: '',
-    trads: [''],
-    links: [''],
+    trads: ['Estancias (selección)'],
+    links: ['https://editorial-alastor.blogspot.com/2023/08/agrippa-aubigne-estancias-stances.html'],
     rels: [6],
   },
   {
@@ -365,8 +365,8 @@ const AuthorData = [
     url: 'francesco-petrarca',
     life: '(Arezzo, Italia, 1304 - Padua, Italia, 1374)',
     bio: '',
-    trads: [''],
-    links: [''],
+    trads: ['Oh, pasos errantes'],
+    links: ['https://editorial-alastor.blogspot.com/2023/07/petrarquismo-oscuro-italiano-y-frances.html'],
     rels: [6],
   },*/
   /*{
@@ -380,8 +380,7 @@ const AuthorData = [
     links: [''],
     rels: [4],
   },*/
-  /* reliques entradas blogspot: sidebar + ed impresa, 2exts disperata, d'aubigné estancia i, saint-amant soledad, 4exts poesía de cementerio;
-  sxix2: gogol lautreamont huysmans wilde; maupassant irving (hoffmann hawthorne; hearn bécquer) dunsany howard; */
+  /* sxix2: gogol lautreamont huysmans wilde; maupassant irving hoffmann dunsany; hawthorne hearn bécquer howard; */
 ]
 
 export default AuthorData

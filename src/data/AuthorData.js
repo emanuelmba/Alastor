@@ -322,15 +322,17 @@ const AuthorData = [
     ],
     rels: [4],
   },
-  /*{
+  {
     id: 24,
     name: 'Thomas',
     surname: 'Chatterton',
     url: 'thomas-chatterton',
     life: '(Bristol, Inglaterra, 1752 - Holborn, Inglaterra, 1770)',
-    bio: '',
+    bio: 'Poeta prerromántico inglés cuya trágica y prematura muerte lo volvería un icono entre los autores románticos. A imitación de James Macpherson con los poemas apócrifos de Ossian, Thomas Chatterton inició su carrera con una serie de obras de estilo arcaizante que atribuyó a un ficticio monje del siglo <span class="vers">XV</span> llamado Thomas Rowley. Tras esa primera incursión, escribió nuevos poemas ya bajo su propio nombre, hasta que, acuciado por las penurias económicas y la incomprensión del mundo a su arte, puso fin a su vida a los tempranos 17 años de edad. Tanto su figura como su breve obra resultarían de gran influencia para autores de la talla de William Wordsworth, <a href="s-t-coleridge">S. T. Coleridge</a>, <a href="john-keats">John Keats</a>, <a href="p-b-shelley">P. B. Shelley</a> y el francés Alfred de Vigny, quien incluso escribiría una obra de teatro inspirada en su trágica historia.',
     trads: ['Elegía'],
-    links: ['https://editorial-alastor.blogspot.com/2023/07/thomas-chatterton-elegia.html'],
+    links: [
+      'https://editorial-alastor.blogspot.com/2023/07/thomas-chatterton-elegia.html',
+    ],
     rels: [6],
   },
   {
@@ -339,9 +341,11 @@ const AuthorData = [
     surname: 'd’Aubigné',
     url: 'agrippa-daubigne',
     life: '(Pons, Francia, 1552 - Ginebra, Suiza, 1630)',
-    bio: '',
+    bio: 'Militar y autor barroco del Renacimiento francés que destacó por lo oscuro de gran parte su poesía. Sus principales obras fueron <em>Les Tragiques</em>>, de 1616, largo poema épico en el que se incluye el fragmento «Ved al cielo morir en un doloroso esfuerzo», que pasó a circular desde entonces por numerosas antologías de poesía francesa, y el cancionero neopetrarquista <em>Le Printemps</em>>, de 1573, dedicado a su musa amorosa Diane Salviati y que se subdivide en tres libros: uno de sonetos, llamado <em>Hécatombe à Diane</em>, otro intitulado <em>Stances</em> que reúne estancias de poesía desesperada hechas a imitación del género de la <em>disperata</em> italiana, y uno de odas llamado simplemente <em>Odes</em>. Escribió también obras religiosas y una extensa historia universal.',
     trads: ['Estancias (selección)'],
-    links: ['https://editorial-alastor.blogspot.com/2023/08/agrippa-aubigne-estancias-stances.html'],
+    links: [
+      'https://editorial-alastor.blogspot.com/2023/08/agrippa-aubigne-estancias-stances.html',
+    ],
     rels: [6],
   },
   {
@@ -350,7 +354,7 @@ const AuthorData = [
     surname: 'Milton',
     url: 'john-milton',
     life: '(Londres, Inglaterra, 1608 - Londres, Inglaterra, 1674)',
-    bio: '',
+    bio: 'Además de ser junto a William Shakespeare el más grande exponente de la poesía inglesa, John Milton fue sobre todo uno de los más eximios e inmortales poetas épicos de todos los tiempos junto a Homero, Dante y Virgilio. Su obra capital, el <em>Paradise Lost</em>, fue una influencia mayor en la literatura universal merced principalmente a la incomparable figura de Satán, tal vez una de las primeras figuras románticas de la historia. Otras obras destacables del autor fueron la elegía <em>Lycidas</em>, escrita a la muerte de su amigo Edward King, las mascaradas <em>Arcades</em> y <em>Comus</em>, la tragedia <em>Samson Agonistes</em>, el <em>Paradise Regained</em>, continuación de su obra maestra, y los notables poemas gemelos <em>L´Allegro</em> e <em>Il Penseroso</em>, el segundo de los cuales sería una enorme influencia para los <em>graveyard poets</em> (poetas de cementerio) del siguiente siglo.',
     trads: ['L’Allegro / Il Penseroso', 'El paraíso perdido (fragmentos)'],
     links: [
       'https://editorial-alastor.blogspot.com/2012/03/john-milton-lallegro-il-penseroso.html',
@@ -364,11 +368,14 @@ const AuthorData = [
     surname: 'Petrarca',
     url: 'francesco-petrarca',
     life: '(Arezzo, Italia, 1304 - Padua, Italia, 1374)',
-    bio: '',
-    trads: ['Oh, pasos errantes'],
-    links: ['https://editorial-alastor.blogspot.com/2023/07/petrarquismo-oscuro-italiano-y-frances.html'],
+    bio: 'Autor medieval italiano que, con los más de 300 sonetos y poemas reunidos en su <em>Canzoniere</em> y dedicados a su musa amorosa, Laura, se volvería el padre de un extenso linaje de poetas que, a lo largo de los siguientes siglos, se servirían de vehículos similares para transmitir toda la desesperada pasión y la asfixiante angustia de sus lamentos amorosos. La obra de Petrarca escrita en lengua vulgar se volvería también una gran influencia en la poesía cortesana renacentista por su gran refinamiento y su vital subjetividad, y hasta encontraría ecos en artistas del Romanticismo como el poeta Victor Hugo o el compositor Franz Liszt. También escribió, inspirado por Dante Alighieri, el largo poema narrativo <em>I trionfi</em>, así como diversos tratados filosóficos entre los que destacó su <em>De vita solitaria</em>.',
+    trads: ['Solo y pensativo', 'Oh, pasos errantes'],
+    links: [
+      '../imgs/06-poesia-oscura-antigua.pdf',
+      'https://editorial-alastor.blogspot.com/2023/07/petrarquismo-oscuro-italiano-y-frances.html',
+    ],
     rels: [6],
-  },*/
+  },
   /*{
     id: 28,
     name: '',

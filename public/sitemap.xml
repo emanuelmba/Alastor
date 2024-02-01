@@ -45,13 +45,13 @@
 </url>
 
 <url>
-<loc>http://editorial-alastor.com.ar/imgs/01-lord-byron-manfred-cain.pdf</loc>
+<loc>https://editorial-alastor.com.ar/imgs/01-lord-byron-manfred-cain.pdf</loc>
 <lastmod>2023-09-08T17:03:26+00:00</lastmod>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>http://editorial-alastor.com.ar/imgs/02-relatos-oscuridad-horror.pdf</loc>
+<loc>https://editorial-alastor.com.ar/imgs/02-relatos-oscuridad-horror.pdf</loc>
 <lastmod>2023-09-08T17:03:26+00:00</lastmod>
 <priority>0.7</priority>
 </url>
@@ -63,7 +63,7 @@
 </url>
 
 <url>
-<loc>http://editorial-alastor.com.ar/imgs/04-poesia-oscura-romantica.pdf</loc>
+<loc>https://editorial-alastor.com.ar/imgs/04-poesia-oscura-romantica.pdf</loc>
 <lastmod>2023-09-08T17:03:26+00:00</lastmod>
 <priority>0.7</priority>
 </url>
@@ -72,6 +72,12 @@
 <loc>https://editorial-alastor.com.ar/imgs/06-poesia-oscura-antigua.pdf</loc>
 <lastmod>2023-09-08T17:03:26+00:00</lastmod>
 <priority>0.7</priority>
+</url>
+
+<url>
+<loc>https://editorial-alastor.com.ar/autores/</loc>
+<lastmod>2023-09-08T17:03:26+00:00</lastmod>
+<priority>0.4</priority>
 </url>
 
 <url>
@@ -234,24 +240,6 @@
 <loc>https://editorial-alastor.com.ar/autores/clark-ashton-smith</loc>
 <lastmod>2023-09-08T17:03:26+00:00</lastmod>
 <priority>0.6</priority>
-</url>
-
-<url>
-<loc>https://editorial-alastor.com.ar/catalogo/</loc>
-<lastmod>2023-09-08T17:03:26+00:00</lastmod>
-<priority>0.4</priority>
-</url>
-
-<url>
-<loc>https://editorial-alastor.com.ar/autores/</loc>
-<lastmod>2023-09-08T17:03:26+00:00</lastmod>
-<priority>0.4</priority>
-</url>
-
-<url>
-<loc>https://editorial-alastor.com.ar/subs/</loc>
-<lastmod>2023-09-08T17:03:26+00:00</lastmod>
-<priority>0.2</priority>
 </url>
 
 </urlset>

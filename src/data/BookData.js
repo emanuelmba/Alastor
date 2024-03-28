@@ -92,7 +92,7 @@ const BookData = [
     url: '-ehrendost-mitos-leyendas',
     isbn: '978-987-26668-4-2',
     pags: 128,
-    price: 0,
+    price: 1,
     translated: false,
     mlibre: '',
     desc: '<em>Mitos y leyendas de la gran urbe</em> es un compendio de narraciones urbanas que, abarcando desde ajadas leyendas paganas hasta espeluznantes relatos de horror, encuentran su marco en las sórdidas y recónditas callejas de las metrópolis contemporáneas. No se propone este libro recoger mitos y leyendas ya populares, sino antes bien dotar a los gigantes de cemento tanto de una mitología propia como de presencias y sucesos extraños que les confieran cierta aura capaz de revelarlos, a nuestros ojos, un poco más bellos y misteriosos. Se dan así cita en estas páginas, impregnadas tanto de poesía como de oscuridad, desde dioses, trasgos y seres mitológicos que habitan ignorados en los más ocultos reductos de las grandes urbes, hasta historias, leyendas y consejas tan maravillosas como llenas de espanto y horror.',

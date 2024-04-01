@@ -1,5 +1,21 @@
 const BookData = [
   {
+    id: 8,
+    code: '08',
+    author: 'John Aikin [et al.]',
+    title: 'Prosa oscura romántica',
+    url: '-prosa-oscura-romantica',
+    isbn: '978-987-26668-7-3',
+    pags: 192,
+    price: 0,
+    translated: true,
+    mlibre: '',
+    desc: 'Antología de obras en prosa que, yendo de la novela gótica prerromántica al decadentismo, completa nuestra trilogía de literatura oscura antigua. En breve en nuestro catálogo.',
+    index:
+      '<p><span>John Aikin</span><br/>Sir Bertrand<br/><br/><span>José Cadalso</span><br/>Noches lúgubres (Noche primera)<br/><br/><span>Charles Nodier</span><br/>El castillo del lago<br/><br/><span>E. T. A. Hoffmann</span><br/>Una historia de fantasmas<br/><br/><span>Washington Irving</span><br/>La aventura del estudiante alemán<br/><br/><span>Nathaniel Hawthorne</span><br/>El joven Goodman Brown<br/><br/><span>Edgar Allan Poe</span><br/>Morella<br/><br/><span>Nikolai Gogol</span><br/>Viy<br/><br/><span>Aleksei Tolstoi</span><br/>La familia del vurdalak<br/><br/><span>Gustavo Adolfo Bécquer</span><br/>El rayo de luna<br/><br/><span>Charles Baudelaire</span><br/>Las viudas<br/><br/><span>Conde de Lautréamont</span><br/>Los cantos de Maldoror (extractos)<br/><br/><span>Lafcadio Hearn</span><br/>La mujer de la nieve<br/><br/><span>Guy de Maupassant</span><br/>El horlá<br/><br/><span>Joris-Karl Huysmans</span><br/>Allá lejos (extractos)<br/><br/><span>Oscar Wilde</span><br/>Salomé</p>',
+    rels: [2, 4],
+  },
+  {
     id: 6,
     code: '06',
     author: 'Francesco Petrarca [et al.]',
@@ -65,7 +81,7 @@ const BookData = [
     desc: 'A través de esta oscura antología, <a href="../autores/walter-scott">sir Walter Scott</a> nos lleva, en <em>La cámara de los tapices</em>, a un viejo castillo perturbado por una aparición; <a href="../autores/john-polidori">John Polidori</a> se desangra por un verdadero demonio byroniano en <em>El vampiro</em>; <a href="../autores/edgar-allan-poe">Edgar Allan Poe</a> nos hunde con <em>Berenice</em> en el alucinado mundo de un monomaníaco; <a href="../autores/sheridan-le-fanu">Joseph Sheridan Le Fanu</a> se interna, en <em>Ultor de Lacy</em>, por entre los melancólicos bosques de las leyendas irlandesas, ricos en hadas, fantasmas, duendes y ruinas; <a href="../autores/ambrose-bierce">Ambrose Bierce</a> nos presenta el inexplicable sortilegio que envuelve a <em>Un habitante de Carcosa</em>; <a href="../autores/m-r-james">M. R. James</a> nos hace víctimas del inmortal rigor del <em>Conde Magnus</em>; <a href="../autores/arthur-machen">Arthur Machen</a> nos deleita y estremece por igual con la exuberante belleza y la inconsciente maldad pagana que aún sobrevive en <em>El pueblo blanco</em>; <a href="../autores/m-p-shiel">M. P. Shiel</a> se regodea en grotescas imágenes de muerte y de corrupción en la refinada <em>Xélucha</em>; <a href="../autores/h-p-lovecraft">H. P. Lovecraft</a> nos revela, en <em>El extraño</em>, horrores internos de los que nunca podremos escapar; y <a href="../autores/clark-ashton-smith"> Clark Ashton Smith</a> nos sacude con las luctuosas tragedias personales que proceden de <em>La estirpe sin nombre</em>.',
     index:
       '<p><span>Walter Scott</span><br/>La cámara de los tapices<br/><br/><span>John Polidori</span><br/>El vampiro<br/><br/><span>Edgar Allan Poe</span><br/>Berenice<br/><br/><span>J. Sheridan Le Fanu</span><br/>Ultor de Lacy<br/><br/><span>Ambrose Bierce</span><br/>Un habitante de Carcosa<br/><br/><span>M. R. James</span><br/>El conde Magnus<br/><br/><span>Arthur Machen</span><br/>El pueblo blanco<br/><br/><span>M. P Shiel</span><br/>Xélucha<br/><br/><span>H. P. Lovecraft</span><br/>El extraño<br/><br/><span>Clark Ashton Smith</span><br/>La estirpe sin nombre</p>',
-    rels: [4, 6],
+    rels: [1, 6],
   },
   {
     id: 1,
@@ -98,8 +114,24 @@ const BookData = [
     desc: '<em>Mitos y leyendas de la gran urbe</em> es un compendio de narraciones urbanas que, abarcando desde ajadas leyendas paganas hasta espeluznantes relatos de horror, encuentran su marco en las sórdidas y recónditas callejas de las metrópolis contemporáneas. No se propone este libro recoger mitos y leyendas ya populares, sino antes bien dotar a los gigantes de cemento tanto de una mitología propia como de presencias y sucesos extraños que les confieran cierta aura capaz de revelarlos, a nuestros ojos, un poco más bellos y misteriosos. Se dan así cita en estas páginas, impregnadas tanto de poesía como de oscuridad, desde dioses, trasgos y seres mitológicos que habitan ignorados en los más ocultos reductos de las grandes urbes, hasta historias, leyendas y consejas tan maravillosas como llenas de espanto y horror.',
     index:
       '<p><span>Libro I</span><br/>El semáforo en perpetuo rojo<br/>La bocina del tren espectral<br/>La pianista y el poeta<br/>El ucraniano errante<br/>El dueño del mundo<br/>Los dioses de los ríos infectos<br/>La cabeza del albañil<br/>La moto sin jinete<br/>Los devoradores de pavimento<br/>El carrotauro<br/>El conductor recompensado<br/>Las ninfas de los faroles<br/><br/><span>Libro II</span><br/>El treno de los félidos<br/>El búho del parque arbolado<br/>El hombre de la barrera<br/>Leyendas virtuales<br/>El érebo de asfalto<br/>La teogonía urbana<br/>El beso de Selene<br/>El laberinto de Chas<br/>El burdel embrujado<br/>La progenie de la lluvia<br/>Los símbolos del portal<br/>El caminante nocturno<br/><br/><span>Libro III</span><br/>El fuego fatuo callejero<br/>El depósito de lágrimas<br/>El canto de los árboles<br/>La marcha de los enanos<br/>El volumen exicial<br/>El oráculo de la plaza<br/>El pintor sin alma<br/>La diosa del olvido<br/>Las gorgonas del museo<br/>El mendigo angelical<br/>La huelga de fantasmas<br/>El Ragnarok de la gran urbe</p>',
-    rels: [2, 4],
+    rels: [2, 6],
   },
+  /*{
+    id: 7,
+    code: '07',
+    author: 'E. Ehrendost',
+    title: 'Diario de un demonio',
+    url: '-ehrendost-diario-demonio',
+    isbn: '978-987-26668-6-6',
+    pags: 128,
+    price: 0,
+    translated: false,
+    mlibre: '',
+    desc: '<em>Diario de un demonio</em> es un compendio de narraciones oscuras y poemas en prosa malditos que harán muy difícil al lector proseguir con su lectura. En breve en nuestro catálogo.',
+    index:
+      '<p><span>Libro I</span><br/><br/><span>Libro II</span><br/><br/><span>Libro III</span></p>',
+    rels: [5, 6],
+  },*/
 ]
 
 export default BookData

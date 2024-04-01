@@ -101,7 +101,7 @@ const AuthorData = [
       'https://editorial-alastor.blogspot.com/2016/08/edgar-allan-poe-solo-alone.html',
       'https://editorial-alastor.blogspot.com/2016/08/edgar-allan-poe-ulalume.html',
     ],
-    rels: [2, 4],
+    rels: [2, 4, 8],
   },
   {
     id: 7,
@@ -281,7 +281,7 @@ const AuthorData = [
     links: [
       'https://editorial-alastor.blogspot.com/2011/02/baudelaire-las-flores-del-mal.html',
     ],
-    rels: [4],
+    rels: [4, 8],
   },
   {
     id: 21,

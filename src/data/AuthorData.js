@@ -387,7 +387,7 @@ const AuthorData = [
     links: [''],
     rels: [4],
   },*/
-  /* sxix2: gogol lautreamont huysmans wilde; maupassant irving hoffmann dunsany; hawthorne hearn bécquer howard; */
+  /* sxix2: gogol hoffmann lautreamont huysmans; irving maupassant wilde dunsany; hawthorne hearn bécquer howard; */
 ]
 
 export default AuthorData

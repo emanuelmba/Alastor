@@ -7,3 +7,22 @@
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
 </IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_USER_AGENT} ^libwww-perl/ [NC]
+  RewriteRule .* - [F]
+  RewriteCond %{QUERY_STRING} DOCUMENT_ROOT [OR]
+  RewriteCond %{QUERY_STRING} .*=http.+ [NC,OR]
+  RewriteCond %{REQUEST_URI} %3C/scripts/.+\.php%3E [NC]
+  RewriteRule .* - [F]
+  RewriteCond %{QUERY_STRING} ^(.*)=http: [NC]
+  RewriteRule ^(.*)$ - [F,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_USER_AGENT} ^.(Bytedance|Bytespider).$ [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^.*(Python|aiohttp).*$ [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} "=Go-http-client/1.1" [NC]
+  RewriteRule .* - [F]
+</IfModule>

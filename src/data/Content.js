@@ -10,7 +10,7 @@ export const ContentProvider = ({ children }) => {
   const [books] = useState(BookData)
   const mail = 'info@editorial-alastor.com.ar'
   const mpago = 'https://mpago.la/2zpEVzD'
-  const prices = [0, 4000, 8000, 11000]
+  const prices = [0, 4000, 8000, 12500]
 
   const [author, setAuthor] = useState({
     item: {},

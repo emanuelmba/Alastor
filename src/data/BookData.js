@@ -7,7 +7,7 @@ const BookData = [
     url: '-prosa-oscura-romantica',
     isbn: '978-987-26668-7-3',
     pags: 192,
-    price: 0,
+    price: 3,
     translated: true,
     mlibre: '',
     desc: 'Sería difícil separar a la literatura oscura y de horror del papel que el Romanticismo tuvo en su surgimiento, auge y consolidación. Uniendo los precedentes de la novela gótica, las baladas sobrenaturales y la poesía de cementerio, numerosos autores románticos se abocarían a cimentar el género del cuento de horror, cuyos ecos llegan hasta el presente, así como a incursionar en un tipo de escritura que no tardaría en dar lugar a la poesía en prosa y a escuelas estéticas como las del simbolismo y el decadentismo. Este volumen, que cierra la trilogía de esta editorial sobre literatura oscura, nos presenta, a través de la obra de 16 representativos autores, diversos hitos de la sombría prosa de ese período.',

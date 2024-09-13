@@ -1,6 +1,12 @@
 import { useState, useContext, useEffect } from 'react'
 import { send } from 'emailjs-com'
-import { FaAmazon, FaBloggerB, FaRegHandshake } from 'react-icons/fa'
+import {
+  FaAmazon,
+  FaBloggerB,
+  FaRegHandshake,
+  FaFacebook,
+  FaInstagram,
+} from 'react-icons/fa'
 import Content from '../data/Content'
 
 function Contacto() {
@@ -109,7 +115,8 @@ function Contacto() {
             <select name='motivo' value={form.motivo || ''} onChange={handleChange}>
               <option value=''>-- Elija una opción de la lista --</option>
               <option value='Pedido'>Realizar un pedido</option>
-              <option value='Ebook'>Solicitar un ebook abonado</option>
+              <option value='Envio'>Consultar medios de envío</option>
+              <option value='Estado'>Chequear estado de pedido</option>
               <option value='Otro'>Otro tipo de consulta</option>
             </select>
           </div>
@@ -143,25 +150,36 @@ function Contacto() {
             href='https://editorial-alastor.blogspot.com/'
             target='_blank'
             rel='noreferrer'
-            title='Blogger'
-          >
+            title='Blogger'>
             <FaBloggerB />
           </a>
           <a
             href='https://perfil.mercadolibre.com.ar/edalastor'
             target='_blank'
             rel='noreferrer'
-            title='MercadoLibre'
-          >
+            title='MercadoLibre'>
             <FaRegHandshake />
           </a>
           <a
             href='https://www.amazon.com/s?i=stripbooks&rh=p_27%3AEditorial+Alastor'
             target='_blank'
             rel='noreferrer'
-            title='Amazon'
-          >
+            title='Amazon'>
             <FaAmazon />
+          </a>
+          <a
+            href='https://www.facebook.com/people/Editorial-Alastor/61565508323548'
+            target='_blank'
+            rel='noreferrer'
+            title='Facebook'>
+            <FaFacebook />
+          </a>
+          <a
+            href='https://www.instagram.com/editorial.alastor'
+            target='_blank'
+            rel='noreferrer'
+            title='Instagram'>
+            <FaInstagram />
           </a>
         </div>
       </div>

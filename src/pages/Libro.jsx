@@ -5,8 +5,7 @@ import Card from '../components/Card'
 import RelatedItem from '../components/RelatedItem'
 
 function Libro() {
-  const { book, setBook, books, setBanner, prices, mpago, fullTitle } =
-    useContext(Content)
+  const { book, setBook, books, setBanner, prices, fullTitle } = useContext(Content)
 
   useEffect(() => {
     if (book.id === undefined) {
@@ -42,7 +41,7 @@ function Libro() {
     if (book.price !== 0) {
       isFinished = true
     }
-    if (book.mlibre !== '') {
+    if (book.paper_id !== '') {
       isAvailable = true
     }
 
@@ -67,26 +66,41 @@ function Libro() {
               <FaRegFilePdf /> &nbsp;Descargar muestra
             </a>
             <p className='howtobuy'>
-              <b>CÓMO COMPRAR</b>
+              <strong>CÓMO COMPRAR</strong>
               <br />
               <br />
-              <b>Libro físico: </b>Por MercardoLibre, con el botón de{' '}
-              <i>Comprar libro</i>
-              , o de manera directa vía email o formulario de contacto. Métodos de pago:
-              transferencia bancaria, MercadoPago, efectivo. Métodos de entrega: retiro
-              en persona por Villa Devoto (CABA, Argentina), entregas en CABA (consultar
-              precio según zona), envíos por Correo Argentino.
+              Puede comprar a través de nuestra Tienda con los botones de{' '}
+              <em>Comprar libro</em> y <em>Comprar epub</em>, o dirigirse a nuestros
+              perfiles en MercadoLibre o Amazon.
               <br />
               <br />
-              <b>Versión ebook: </b>Por MercadoPago, con el botón de{' '}
-              <i>Comprar ebook</i>, y contactando luego a la editorial mencionando el
-              título adquirido, el formato de archivo requerido (epub o mobi) y un email
-              en el cual recibirlo.
+              <strong>Métodos de pago en Tienda</strong>
+              <br />
+              <strong>En Argentina:</strong>{' '}
+              <em>MercadoPago, transferencia bancaria, efectivo.</em>
+              <br />
+              <strong>Desde el exterior:</strong> <em>PayPal, Western Union.</em>
               <br />
               <br />
-              <b>Fuera de Argentina: </b>Vía email o formulario de contacto. Consultar
-              precio en dólares y costo del envío para el caso de libros físicos.
-              Métodos de pago: PayPal, WesternUnion, Airtm.
+              <strong>Métodos de envío en Tienda</strong>
+              <br />
+              <strong>CABA:</strong>{' '}
+              <em>entregas a domicilio, retiro en persona (zona Villa Devoto).</em>
+              <br />
+              <strong>Resto de Argentina:</strong>{' '}
+              <em>
+                Correo Argentino (consultar por otros métodos como Andreani, Vía Cargo o
+                MercadoEnvíos).
+              </em>
+              <br />
+              <strong>Al exterior:</strong>{' '}
+              <em>
+                envío aéreo por correo regular con número de seguimiento.
+                <br />
+                <br />
+                Los eBooks se envían al mail del comprador tras la acreditación del
+                pago. Aclarar en caso de que se necesite formato mobi.
+              </em>
             </p>
           </aside>
         )}
@@ -139,18 +153,16 @@ function Libro() {
               <div className='btn-buy border-btn'>
                 {isAvailable && (
                   <a
-                    href={book.mlibre}
-                    target='_blank'
+                    href={`https://editorial-alastor.com.ar/tienda/product_info.php?products_id=${book.paper_id}&currency=ARS`}
                     rel='noreferrer'
-                    title={'MercadoLibre: $ ' + prices[book.price]}>
+                    title={'$ ' + prices[book.price]}>
                     <FaBook /> &nbsp;Comprar libro
                   </a>
                 )}
                 <a
-                  href={mpago}
-                  target='_blank'
+                  href={`https://editorial-alastor.com.ar/tienda/product_info.php?products_id=${book.ebook_id}&currency=ARS`}
                   rel='noreferrer'
-                  title={'MercadoPago: $ ' + prices[1]}>
+                  title={'$ ' + prices[1]}>
                   <FaTabletAlt /> &nbsp;Comprar epub
                 </a>
               </div>

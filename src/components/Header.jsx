@@ -15,9 +15,9 @@ function Header() {
         <img className='logo fade' src={'../imgs/logo.png'} alt='Editorial Alastor' />
       </Link>
       <nav>
-        <Link to='/tienda'>
+        <a href='https://editorial-alastor.com.ar/tienda/'>
           <button className='fraktur'>Tienda</button>
-        </Link>
+        </a>
         <Link to='/autores'>
           <button className='fraktur'>Autores</button>
         </Link>

@@ -1,5 +1,22 @@
 const BookData = [
   {
+    id: 9,
+    code: '09',
+    author: 'Theodor Kittelsen',
+    title: 'La muerte negra / Tierra de trolls',
+    url: '-kittelsen-muerte-negra-trolls',
+    isbn: '978-987-26668-8-0',
+    pags: 128,
+    price: 3,
+    translated: true,
+    ebook_id: 41,
+    paper_id: '',
+    desc: 'Esta antología ilustrada nos presenta la parte más oscura del legado del ilustrador y pintor noruego Theodor Kittelsen mediante la publicación completa de <em>Svartedauen (La muerte negra)</em>, por primera vez traducida y editada en español, y de una selección de diversas criaturas fantásticas del folklore de Noruega que, englobada bajo el título de <em>Tierra de trolls</em>, nos ofrece un interesante muestrario de diversas ilustraciones y pinturas de Kittelsen acompañadas por algunos de los poemas en prosa que escribió para <em>Troldskab (Magia troll)</em> y por varios de los textos de las <em>Norske Folke-Sagn (Leyendas populares noruegas)</em>, del historiador y folklorista Andreas Faye, que le sirvieron de inspiración y modelo.',
+    index:
+      '<p><span>La muerte negra</span><br/>Anochecer de otoño<br/>Pesta llega<br/>Madre, se acerca una bruja<br/>El pobre<br/>Recorre todo el país<br/>Sobre mares y ríos<br/>Barre cada rincón<br/>Pesta se marcha<br/>Desolación<br/>Los pequeños Per y Mari<br/>Rypa<br/>Knut y Thore<br/>Musstad<br/>La vieja iglesia<br/>El urogallo canta<br/><br/><span>Tierra de trolls</span><br/>El troll del bosque<br/>El dragón<br/>La huldra<br/>En las aguas<br/>El jutul<br/>El gjenganger<br/>El følgie<br/>El nøkk<br/>El draug<br/>Pesta<br/>Huldregaard<br/>El troll de la montaña</p>',
+    rels: [4, 8],
+  },
+  {
     id: 8,
     code: '08',
     author: 'John Aikin [et al.]',
@@ -82,7 +99,7 @@ const BookData = [
     desc: 'A través de esta oscura antología, <a href="../autores/walter-scott">sir Walter Scott</a> nos lleva, en <em>La cámara de los tapices</em>, a un viejo castillo perturbado por una aparición; <a href="../autores/john-polidori">John Polidori</a> se desangra por un verdadero demonio byroniano en <em>El vampiro</em>; <a href="../autores/edgar-allan-poe">Edgar Allan Poe</a> nos hunde con <em>Berenice</em> en el alucinado mundo de un monomaníaco; <a href="../autores/sheridan-le-fanu">Joseph Sheridan Le Fanu</a> se interna, en <em>Ultor de Lacy</em>, por entre los melancólicos bosques de las leyendas irlandesas, ricos en hadas, fantasmas, duendes y ruinas; <a href="../autores/ambrose-bierce">Ambrose Bierce</a> nos presenta el inexplicable sortilegio que envuelve a <em>Un habitante de Carcosa</em>; <a href="../autores/m-r-james">M. R. James</a> nos hace víctimas del inmortal rigor del <em>Conde Magnus</em>; <a href="../autores/arthur-machen">Arthur Machen</a> nos deleita y estremece por igual con la exuberante belleza y la inconsciente maldad pagana que aún sobrevive en <em>El pueblo blanco</em>; <a href="../autores/m-p-shiel">M. P. Shiel</a> se regodea en grotescas imágenes de muerte y de corrupción en la refinada <em>Xélucha</em>; <a href="../autores/h-p-lovecraft">H. P. Lovecraft</a> nos revela, en <em>El extraño</em>, horrores internos de los que nunca podremos escapar; y <a href="../autores/clark-ashton-smith"> Clark Ashton Smith</a> nos sacude con las luctuosas tragedias personales que proceden de <em>La estirpe sin nombre</em>.',
     index:
       '<p><span>Walter Scott</span><br/>La cámara de los tapices<br/><br/><span>John Polidori</span><br/>El vampiro<br/><br/><span>Edgar Allan Poe</span><br/>Berenice<br/><br/><span>J. Sheridan Le Fanu</span><br/>Ultor de Lacy<br/><br/><span>Ambrose Bierce</span><br/>Un habitante de Carcosa<br/><br/><span>M. R. James</span><br/>El conde Magnus<br/><br/><span>Arthur Machen</span><br/>El pueblo blanco<br/><br/><span>M. P. Shiel</span><br/>Xélucha<br/><br/><span>H. P. Lovecraft</span><br/>El extraño<br/><br/><span>Clark Ashton Smith</span><br/>La estirpe sin nombre</p>',
-    rels: [6, 8],
+    rels: [8, 9],
   },
   {
     id: 1,
@@ -130,7 +147,7 @@ const BookData = [
     translated: false,
     ebook_id: 20,
     paper_id: '',
-    desc: '<em>Mitos y leyendas de la gran urbe</em> es un compendio de narraciones urbanas que, abarcando desde ajadas leyendas paganas hasta espeluznantes relatos de horror, encuentran su marco en las sórdidas y recónditas callejas de las metrópolis contemporáneas. La influencia de su escritura va de los antiguos griegos a autores como Lord Dunsany y Nikolai Gogol, pasando por los poemas en prosa de Charles Baudelaire. No se propone este libro recoger mitos y leyendas ya populares, sino antes bien dotar a los gigantes de cemento tanto de una mitología propia como de presencias y sucesos extraños que les confieran cierta aura capaz de revelarlos, a nuestros ojos, un poco más bellos y misteriosos. Se dan así cita en estas páginas, impregnadas tanto de poesía como de oscuridad, desde dioses, trasgos y seres mitológicos que habitan ignorados en los más ocultos reductos de las grandes urbes, hasta historias, leyendas y consejas tan maravillosas como llenas de espanto y horror.',
+    desc: '<em>Mitos y leyendas de la gran urbe</em> es un compendio de narraciones urbanas que, abarcando desde ajadas leyendas paganas hasta espeluznantes relatos de horror, encuentran su marco en las sórdidas y recónditas callejas de las metrópolis contemporáneas. La influencia de su escritura va de los antiguos griegos a autores como Nikolai Gogol y Lord Dunsany, pasando por los poemas en prosa de Charles Baudelaire. No se propone este libro recoger mitos y leyendas ya populares, sino antes bien dotar a los gigantes de cemento tanto de una mitología propia como de presencias y sucesos extraños que les confieran cierta aura capaz de revelarlos, a nuestros ojos, un poco más bellos y misteriosos. Se dan así cita en estas páginas, impregnadas tanto de poesía como de oscuridad, desde dioses, trasgos y seres mitológicos que habitan ignorados en los más ocultos reductos de las grandes urbes, hasta historias, leyendas y consejas tan maravillosas como llenas de espanto y horror.',
     index:
       '<p><span>Libro I</span><br/>El semáforo en perpetuo rojo<br/>La bocina del tren espectral<br/>La pianista y el poeta<br/>El ucraniano errante<br/>El dueño del mundo<br/>Los dioses de los ríos infectos<br/>La cabeza del albañil<br/>La moto sin jinete<br/>Los devoradores de pavimento<br/>El carrotauro<br/>El conductor recompensado<br/>Las ninfas de los faroles<br/><br/><span>Libro II</span><br/>El treno de los félidos<br/>El búho del parque arbolado<br/>El hombre de la barrera<br/>Leyendas virtuales<br/>El érebo de asfalto<br/>La teogonía urbana<br/>El beso de Selene<br/>El laberinto de Chas<br/>El burdel embrujado<br/>La progenie de la lluvia<br/>Los símbolos del portal<br/>El caminante nocturno<br/><br/><span>Libro III</span><br/>El fuego fatuo callejero<br/>El depósito de lágrimas<br/>El canto de los árboles<br/>La marcha de los enanos<br/>El volumen exicial<br/>El oráculo de la plaza<br/>El pintor sin alma<br/>La diosa del olvido<br/>Las gorgonas del museo<br/>El mendigo angelical<br/>La huelga de fantasmas<br/>El Ragnarok de la gran urbe</p>',
     rels: [2, 7],

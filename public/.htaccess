@@ -19,10 +19,170 @@
   RewriteRule ^(.*)$ - [F,L]
 </IfModule>
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTP_USER_AGENT} ^.(Bytedance|Bytespider).$ [NC,OR]
-  RewriteCond %{HTTP_USER_AGENT} ^.*(Python|aiohttp).*$ [NC,OR]
-  RewriteCond %{HTTP_USER_AGENT} "=Go-http-client/1.1" [NC]
-  RewriteRule .* - [F]
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^.(Bytedance|Bytespider).$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Python|aiohttp|facebookexternalhit|meta-externalagent).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.47" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" [NC]
+RewriteRule .* - [F]
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+BrowserMatchNoCase "libwww-perl" bad_bot
+BrowserMatchNoCase "wget" bad_bot
+BrowserMatchNoCase "LieBaoFast" bad_bot
+BrowserMatchNoCase "Mb2345Browser" bad_bot
+BrowserMatchNoCase "MicroMessenger" bad_bot
+BrowserMatchNoCase "zh_CN" bad_bot
+BrowserMatchNoCase "Kinza" bad_bot
+BrowserMatchNoCase "Bytedance" bad_bot
+BrowserMatchNoCase "Bytespider" bad_bot
+BrowserMatchNoCase "Baiduspider" bad_bot
+BrowserMatchNoCase "DotBot" bad_bot
+BrowserMatchNoCase "Sogou" bad_bot
+BrowserMatchNoCase "Datanyze" bad_bot
+BrowserMatchNoCase "AspiegelBot" bad_bot
+BrowserMatchNoCase "adscanner" bad_bot
+BrowserMatchNoCase "serpstatbot" bad_bot
+BrowserMatchNoCase "spaziodat" bad_bot
+BrowserMatchNoCase "Petalbot" bad_bot
+BrowserMatchNoCase "Claudebot" bad_bot
+BrowserMatchNoCase "Ahrefsbot" bad_bot
+BrowserMatchNoCase "undefined" bad_bot
+Order Deny,Allow
+Deny from env=bad_bot
+
+# China shit
+deny from 114.119.0.0/16
+#
+deny from 101.91.134.0/24
+deny from 112.65.212.0/24
+deny from 140.206.235.0/24
+deny from 140.206.236.0/24
+deny from 223.93.149.0/24
+
+# Singapore shit
+deny from 47.128.0.0/16
+#
+deny from 49.0.204.0/24
+deny from 49.0.205.0/24
+deny from 49.0.206.0/24
+deny from 49.0.207.0/24
+#
+deny from 94.74.83.0/24
+deny from 94.74.84.0/24
+deny from 94.74.85.0/24
+deny from 94.74.86.0/24
+deny from 94.74.87.0/24
+deny from 94.74.88.0/24
+deny from 94.74.89.0/24
+deny from 94.74.90.0/24
+deny from 94.74.91.0/24
+deny from 94.74.92.0/24
+deny from 94.74.93.0/24
+deny from 94.74.94.0/24
+deny from 94.74.95.0/24
+#
+deny from 101.44.160.0/24
+deny from 101.44.161.0/24
+#
+deny from 101.44.248.0/24
+deny from 101.44.249.0/24
+deny from 101.44.250.0/24
+deny from 101.44.251.0/24
+#
+deny from 110.238.105.0/24
+deny from 110.238.106.0/24
+deny from 110.238.107.0/24
+deny from 110.238.108.0/24
+deny from 110.238.109.0/24
+#
+deny from 116.14.2.0/24
+#
+deny from 119.8.167.0/24
+deny from 119.8.168.0/24
+deny from 119.8.169.0/24
+deny from 119.8.170.0/24
+deny from 119.8.171.0/24
+deny from 119.8.172.0/24
+deny from 119.8.173.0/24
+deny from 119.8.174.0/24
+deny from 119.8.175.0/24
+#
+deny from 119.13.100.0/24
+deny from 119.13.101.0/24
+deny from 119.13.102.0/24
+deny from 119.13.103.0/24
+deny from 119.13.104.0/24
+deny from 119.13.105.0/24
+deny from 119.13.106.0/24
+deny from 119.13.107.0/24
+deny from 119.13.108.0/24
+deny from 119.13.109.0/24
+deny from 119.13.110.0/24
+deny from 119.13.111.0/24
+#
+deny from 124.243.144.0/24
+deny from 124.243.145.0/24
+deny from 124.243.146.0/24
+deny from 124.243.147.0/24
+deny from 124.243.148.0/24
+deny from 124.243.149.0/24
+deny from 124.243.150.0/24
+#
+deny from 159.138.99.0/24
+deny from 159.138.100.0/24
+deny from 159.138.101.0/24
+deny from 159.138.102.0/24
+deny from 159.138.103.0/24
+deny from 159.138.104.0/24
+deny from 159.138.105.0/24
+deny from 159.138.106.0/24
+deny from 159.138.107.0/24
+deny from 159.138.108.0/24
+deny from 159.138.109.0/24
+#
+deny from 190.92.200.0/24
+deny from 190.92.201.0/24
+deny from 190.92.202.0/24
+deny from 190.92.203.0/24
+deny from 190.92.204.0/24
+deny from 190.92.205.0/24
+deny from 190.92.206.0/24
+deny from 190.92.207.0/24
+deny from 190.92.208.0/24
+deny from 190.92.209.0/24
+deny from 190.92.210.0/24
+deny from 190.92.211.0/24
+deny from 190.92.212.0/24
+deny from 190.92.213.0/24
+deny from 190.92.214.0/24
+deny from 190.92.215.0/24
+deny from 190.92.216.0/24
+
+#Others
+deny from 57.141.0.0/24
+deny from 73.97.239.149
+deny from 87.214.152.122
+deny from 93.152.210.0/24
+deny from 116.96.45.0/24
+deny from 116.96.46.0/24
+deny from 154.54.249.0/24
+deny from 216.244.66.248
+deny from 217.113.194.0/24
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php71” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php71 .php .php7 .phtml
 </IfModule>
+# php -- END cPanel-generated handler, do not edit

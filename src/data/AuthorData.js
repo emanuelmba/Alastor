@@ -376,8 +376,56 @@ const AuthorData = [
     ],
     rels: [6],
   },
-  /*{
+  {
     id: 28,
+    name: 'Nikolai',
+    surname: 'Gogol',
+    url: 'nikolai-gogol',
+    life: '(Sorochyntsi, Ucrania, 1809 - Moscú, Rusia, 1852)',
+    bio: 'Tras un comienzo fuertemente inspirado en los relatos fantásticos de <a href="eta-hoffmann">E. T. A Hoffmann</a> y en las leyendas y consejas de su Ucrania natal, que plasmó en sus obras <em>Veladas en un caserío de Dikanka</em>, de 1831, que incluía historias como «La víspera de San Juan», «La noche de mayo», «Terrible venganza» y «Un lugar embrujado», y <em>Mirgorod</em>, de 1835, donde destacaba la espeluznante «Viy», la obra de Gogol fue virando hacia un sarcástico y mordaz realismo que lo llevó a escribir lo más logrado de su producción. Un buen ejemplo de ello son sus inigualables <em>Historias de San Petersburgo</em>, que reunía relatos como «Diario de un loco», «El retrato» y «El capote», estos dos últimos no exentos de elementos fantásticos aún. Su incursión en el teatro dejó también gemas como <em>El inspector general</em> y <em>El casamiento</em>, pero su obra más recordada es la novela satírica <em>Almas muertas</em>, cuya segunda parte causó al propio Gogol tal horror que, en un acceso de locura, terminó arrojándola al fuego.',
+    trads: ['Viy (comienzo)'],
+    links: ['../imgs/08-prosa-oscura-romantica.pdf'],
+    rels: [8],
+  },
+  {
+    id: 29,
+    name: 'Theodor',
+    surname: 'Kittelsen',
+    url: 'theodor-kittelsen',
+    life: '(Kragerø, Noruega, 1857 - Jeløya, Noruega, 1914)',
+    bio: 'Pintor, ilustrador y escritor noruego conocido principalmente por sus numerosas obras pictóricas e ilustraciones de trolls y otras criaturas fantásticas del folklore escandinavo, muchas de las cuales fueron reunidas en su temprana colección <em>Troldskab (Magia troll)</em>, donde iban acompañadas de diversos poemas en prosa del propio Kittelsen a menudo inspirados en las <em>Leyendas populares noruegas</em>, del historiador noruego Andreas Faye. Fue ese mismo libro de Faye la fuente de otras dos de sus más importantes colecciones: <em>Tirilil-Tove</em> y <em>Svartedauen (La muerte negra)</em>, en la que retrató con maestría todo el horror y la desolación del paso de la peste negra, bajo la forma de la aterradora anciana «Pesta», a través de una Noruega medieval. Otras obras reconocidas del autor fueron <em>Fra Lofoten (Desde Lofoten)</em>, <em>Soria Moria slott (El palacio de Soria Moria)</em> y sus numerosas ilustraciones para los cuentos de hadas de los autores noruegos Asbjørnsen y Moe.',
+    trads: ['La muerte negra (extractos)'],
+    links: [
+      'https://editorial-alastor.blogspot.com/2024/10/theodor-kittelsen-la-muerte-negra.html',
+    ],
+    rels: [9],
+  },
+  {
+    id: 30,
+    name: 'Joris-Karl',
+    surname: 'Huysmans',
+    url: 'joris-karl-huysmans',
+    life: '(París, Francia, 1848 - París, Francia, 1907)',
+    bio: 'Si bien los inicios de Huymans en las letras estuvieron ligados al movimiento del naturalismo francés, no fue mucho lo que tardó en rebelarse contra esa escuela literaria consagrada a la fealdad material para buscar un camino totalmente opuesto en los barrocos y artificiosos terrenos del esteticismo. Fue así que en 1884, con la publicación de la controvertida novela <em>À rebours (Al revés)</em>, crónica de los gustos caprichosos y refinados del dandy antisocial Des Esseintes, se erigió como la principal figura de la incipiente escuela decadentista, lugar que refrendó unos años más tarde con <em>Là-bas (Allá lejos)</em>, obra en la que retrataba tanto los cultos satánicos de su época como los aberrantes crímenes del mariscal francés Gilles de Rais. Las subsiguientes crisis espirituales de su vida se vieron plasmadas en sus últimas novelas, que marcan su lento acercamiento estético al cristianismo medieval y a la sobriedad de la vida monástica.',
+    trads: ['Allá lejos (extractos)'],
+    links: [
+      'https://editorial-alastor.blogspot.com/2014/07/joris-karl-huysmans-alla-lejos-la-bas.html',
+    ],
+    rels: [8],
+  },
+  {
+    id: 31,
+    name: 'Ernst Theodor Amadeus',
+    surname: 'Hoffmann',
+    url: 'eta-hoffmann',
+    life: '(Königsberg, Alemania, 1776 - Berlín, Alemania, 1822)',
+    bio: 'E. T. A. Hoffmann fue un prolífico artista alemán que se dedicó al dibujo, la composición musical, la literatura y la crítica. Con todo, su fama se debe principalmente a su brillante legado en las letras, donde se reveló como un prolífico cuentista y novelista que cimentó gran parte del Romanticismo literario alemán y se volvió una insoslayable influencia para la literatura fantástica y de ciencia ficción de todo Occidente merced a obras como la antología <em>Nachtstücke (Piezas nocturnas)</em>, de 1815, que incluía relatos como «El hombre de la arena»; la novela gótica <em>Die Elixiere des Teufels (Los elixires del Diablo)</em>, de 1816; y su <em>Die Serapionsbrüder (Los hermanos de San Serapión)</em>, extensa colección publicada entre 1819 y 1821 en cuyas páginas podían encontrarse tempranas narraciones de horror como «Una historia de fantasmas», «El huésped siniestro» y «Vampirismo». En el terreno musical, sus obras más interesantes fueron el <em>Miserere en si bemol menor</em> y su ópera fantástica <em>Undine (Ondina)</em>.',
+    trads: ['Una historia de fantasmas (comienzo)'],
+    links: ['../imgs/08-prosa-oscura-romantica.pdf'],
+    rels: [8],
+  },
+  /*{
+    id: 32,
     name: '',
     surname: '',
     url: '',
@@ -387,7 +435,7 @@ const AuthorData = [
     links: [''],
     rels: [4],
   },*/
-  /* sxix2: gogol kittelsen lautreamont huysmans; irving maupassant hoffmann dunsany; hawthorne hearn wilde howard; */
+  /* lautre irving maupassant dunsany; hawthorne hearn wilde howard; */
 ]
 
 export default AuthorData
